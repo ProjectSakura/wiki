@@ -1,3 +1,6 @@
 .MuiDrawer-paper::-webkit-scrollbar {
   display: none;
 }
+.side-list-item {
+  text-decoration: none;
+}

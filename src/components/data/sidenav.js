@@ -21,17 +21,17 @@ const data = [
       {
         name: "Setting up environment",
         icon: <SettingsOverscanIcon />,
-        url: "/environment",
+        url: "/guides/environment",
       },
       {
         name: "Reporting a bug",
         icon: <ReportProblemIcon />,
-        url: "/report-bug",
+        url: "/guides/report-bug",
       },
       {
         name: "Installing Sakura",
         icon: <CloudDownloadIcon />,
-        url: "/install-sakura",
+        url: "/guides/install-sakura",
       },
     ],
   },
@@ -43,44 +43,64 @@ const data = [
       {
         name: "Apply for mantainership",
         icon: <GroupAddIcon />,
-        url: "/apply",
+        url: "/mantainers/apply",
       },
       {
         name: "Support new device",
         icon: <PhoneAndroidIcon />,
-        url: "support-us",
+        url: "/mantainers/support-us",
       },
-      { name: "Code of Conduct", icon: <BookIcon />, url: "code-of-conduct" },
+      {
+        name: "Code of Conduct",
+        icon: <BookIcon />,
+        url: "/mantainers/code-of-conduct",
+      },
     ],
   },
   {
     topname: "Features",
     topicon: <HomeIcon />,
     content: [
-      { name: "Animation", icon: <SlideshowIcon />, url: "/animation" },
-      { name: "Gestures", icon: <GestureTwoToneIcon />, url: "/gestures" },
+      {
+        name: "Animation",
+        icon: <SlideshowIcon />,
+        url: "/features/animation",
+      },
+      {
+        name: "Gestures",
+        icon: <GestureTwoToneIcon />,
+        url: "/features/gestures",
+      },
       {
         name: "Hardware Buttons",
         icon: <TouchAppIcon />,
-        url: "/hardware-buttons",
+        url: "/features/hardware-buttons",
       },
       {
         name: "Miscellaneous",
         icon: <GestureTwoToneIcon />,
-        url: "/miscellaneous",
+        url: "/features/features/miscellaneous",
       },
-      { name: "Navigation", icon: <NavigationIcon />, url: "/navigation" },
+      {
+        name: "Navigation",
+        icon: <NavigationIcon />,
+        url: "/features/navigation",
+      },
       {
         name: "Notification",
         icon: <NotificationsActiveIcon />,
-        url: "/Notification",
+        url: "/features/Notification",
       },
       {
         name: "Power Menu",
         icon: <PowerSettingsNewIcon />,
-        url: "/power-menu",
+        url: "/features/power-menu",
       },
-      { name: "Statusbar", icon: <EqualizerIcon />, url: "/statusbar" },
+      {
+        name: "Statusbar",
+        icon: <EqualizerIcon />,
+        url: "/features/statusbar",
+      },
     ],
   },
 ];

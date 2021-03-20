@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import clsx from "clsx";
 import data from "../data/sidenav";
-
+import { Link } from "react-router-dom";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -140,14 +140,22 @@ export default function PersistentDrawerLeft() {
           </div>
           {width > 720 && (
             <div>
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">Download</Button>
-              <Button color="inherit">Stats</Button>
-              <Button color="inherit">Blog</Button>
+              <Button color="inherit">
+                <b>Home</b>
+              </Button>
+              <Button color="inherit">
+                <b>Download</b>
+              </Button>
+              <Button color="inherit">
+                <b>Stats</b>
+              </Button>
+              <Button color="inherit">
+                <b>Blog</b>
+              </Button>
             </div>
           )}
           {width <= 720 && (
-            <IconButton>
+            <IconButton style={{ color: "white" }}>
               <MenuIcon />
             </IconButton>
           )}
@@ -196,26 +204,38 @@ export default function PersistentDrawerLeft() {
             )}
           </IconButton>
         </div>
-
-        {data.map((elem1) => {
-          return (
-            <>
-              <Divider />
-              <ListItem button key={elem1.topname}>
-                <ListItemIcon>{elem1.topicon}</ListItemIcon>
-                <ListItemText primary={elem1.topname} />
-              </ListItem>
-              <List>
-                {elem1.content.map((insideelem) => (
-                  <ListItem button key={insideelem.url}>
-                    <ListItemIcon>{insideelem.icon}</ListItemIcon>
-                    <ListItemText primary={insideelem.name} />
-                  </ListItem>
-                ))}
-              </List>
-            </>
-          );
-        })}
+        <div style={{ marginTop: "55px" }}>
+          {data.map((elem1) => {
+            return (
+              <>
+                <Divider />
+                <ListItem button key={elem1.topname}>
+                  <ListItemIcon>{elem1.topicon}</ListItemIcon>
+                  <ListItemText primary={elem1.topname} />
+                </ListItem>
+                <List style={{ padding: "0px" }}>
+                  {elem1.content.map((insideelem) => (
+                    <Link to={insideelem.url}>
+                      <ListItem button key={insideelem.url}>
+                        <ListItemIcon>{insideelem.icon}</ListItemIcon>
+                        <ListItemText>
+                          <div
+                            style={{
+                              textDecoration: "none",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {insideelem.name}
+                          </div>
+                        </ListItemText>
+                      </ListItem>
+                    </Link>
+                  ))}
+                </List>
+              </>
+            );
+          })}
+        </div>
       </Drawer>
       <main
         className={clsx(classes.content, {
