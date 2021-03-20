@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import clsx from "clsx";
+
 import data from "../data/sidenav";
 import { Link } from "react-router-dom";
+import BreadCrum from "../BreadCrums/BreadCrum";
+
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -49,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
   },
+
   drawerPaper: {
     width: drawerWidth,
     // overflow: "hidden",
@@ -79,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  toolbar: theme.mixins.toolbar,
 }));
 
 export default function PersistentDrawerLeft() {
@@ -222,7 +227,6 @@ export default function PersistentDrawerLeft() {
                           <div
                             style={{
                               textDecoration: "none",
-                              fontWeight: "bold",
                             }}
                           >
                             {insideelem.name}
@@ -243,6 +247,7 @@ export default function PersistentDrawerLeft() {
         })}
       >
         <div className={classes.drawerHeader} />
+        <BreadCrum />
       </main>
     </div>
   );

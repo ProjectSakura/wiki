@@ -36,24 +36,24 @@ const data = [
     ],
   },
   {
-    topname: "Mantainers",
+    topname: "Maintainers",
     topicon: <HomeIcon />,
 
     content: [
       {
-        name: "Apply for mantainership",
+        name: "Apply for maintainership",
         icon: <GroupAddIcon />,
-        url: "/mantainers/apply",
+        url: "/maintainers/apply",
       },
       {
         name: "Support new device",
         icon: <PhoneAndroidIcon />,
-        url: "/mantainers/support-us",
+        url: "/maintainers/support-us",
       },
       {
         name: "Code of Conduct",
         icon: <BookIcon />,
-        url: "/mantainers/code-of-conduct",
+        url: "/maintainers/code-of-conduct",
       },
     ],
   },

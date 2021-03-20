@@ -8,7 +8,7 @@ function App() {
         <PersistentDrawerLeft />
         <Switch>
           <Route path="/guides/:guidePath"></Route>
-          <Route path="/mantainers/:mantainersPath"></Route>
+          <Route path="/maintainers/:maintainersPath"></Route>
           <Route path="/features/:featuresPath"></Route>
         </Switch>
       </div>
