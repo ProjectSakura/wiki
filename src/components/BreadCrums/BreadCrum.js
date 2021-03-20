@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./BreadCrum.css";
 import HomeIcon from "@material-ui/icons/Home";
+import { withRouter } from "react-router-dom";
 
-const BreadCrum = (props) => {
+const BreadCrum = () => {
   console.log(window.location.href);
+  const [data, setData] = useState(window.location.href.split("/"));
 
-  const data = window.location.href.split("/");
-
+  useEffect(() => {
+    setData(window.location.href.split("/"));
+  }, [window.location.href]);
   console.log(data);
   return (
     <div className="breadcrum">
@@ -18,4 +21,4 @@ const BreadCrum = (props) => {
   );
 };
 
-export default BreadCrum;
+export default withRouter(BreadCrum);
