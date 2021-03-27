@@ -7,9 +7,8 @@ function App() {
       <div className="App">
         <PersistentDrawerLeft />
         <Switch>
-          <Route path="/guides/:guidePath"></Route>
-          <Route path="/maintainers/:maintainersPath"></Route>
-          <Route path="/features/:featuresPath"></Route>
+          <Route path="/"></Route>
+          <Route path="/:pathid"></Route>
         </Switch>
       </div>
     </Router>

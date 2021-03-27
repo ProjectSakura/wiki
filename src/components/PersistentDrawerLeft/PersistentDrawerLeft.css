@@ -4,3 +4,13 @@
 .side-list-item {
   text-decoration: none;
 }
+.main_content_cards {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+}
+@media (max-width: 720px) {
+  .main_content_cards {
+    grid-template-columns: 1fr;
+  }
+}

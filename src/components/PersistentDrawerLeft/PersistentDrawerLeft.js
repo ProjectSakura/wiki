@@ -4,6 +4,7 @@ import clsx from "clsx";
 import data from "../data/sidenav";
 import { Link } from "react-router-dom";
 import BreadCrum from "../BreadCrums/BreadCrum";
+import CardTab from "../CardTab/CardTab";
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -83,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+
   toolbar: theme.mixins.toolbar,
 }));
 
@@ -90,6 +92,7 @@ export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(true);
+  
   const [width, setWidth] = React.useState(window.innerWidth);
 
   const updateWidthAndHeight = () => {
@@ -241,14 +244,19 @@ export default function PersistentDrawerLeft() {
           })}
         </div>
       </Drawer>
-      <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: open,
-        })}
-      >
-        <div className={classes.drawerHeader} />
-        <BreadCrum />
-      </main>
+      {(!open || width > 720) && (
+        <main
+          className={clsx(classes.content, {
+            [classes.contentShift]: open,
+          })}
+        >
+          <div className={classes.drawerHeader} />
+          <BreadCrum />
+          <div className="main_content_cards">
+            <CardTab />
+          </div>
+        </main>
+      )}
     </div>
   );
 }
