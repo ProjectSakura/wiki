@@ -22,6 +22,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
+import { red } from "@material-ui/core/colors";
 
 const drawerWidth = 280;
 
@@ -122,7 +123,7 @@ export default function PersistentDrawerLeft() {
         })}
       >
         <Toolbar>
-          <div className={classes.title} style={{ display: "flex" }}>
+          <div className={classes.title} style={{ display: "flex", alignItems: "center", }}>
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -131,17 +132,23 @@ export default function PersistentDrawerLeft() {
               className={clsx(classes.menuButton, open && classes.hide)}
             >
               <img
-                style={{ width: "40px", height: "40px", borderRadius: "20px" }}
+                style={{ width: "50px", height: "50px", borderRadius: "20px", paddingBottom: "2px"}}
                 src="https://avatars.githubusercontent.com/u/60218698?s=400&u=f45b9471159098e69cb0f2acc3b8c5947ce6dabc&v=4"
                 alt="logo"
               />
             </IconButton>
             {!open && (
               <div
-                style={{ display: "flex", alignItems: "center", gap: "2px" }}
+                
               >
                 <div>
-                  <h4>Project Sakura</h4>
+                  <h2 className="Main-logo"><span>Project</span>
+                  <span className="Sakura"> Sakura</span></h2>
+                </div>
+                <div className="spring">
+                  <h6>
+                    <i>feels like spring</i>
+                  </h6>
                 </div>
               </div>
             )}

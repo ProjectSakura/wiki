@@ -14,3 +14,32 @@
     grid-template-columns: 1fr;
   }
 }
+
+.MuiToolbar-root{
+  display: flex;
+  background-color: #1e1e1e;
+  color: #b3d4fc;
+}
+
+.MuiToolbar-root>button{
+  color: #b3d4fc;
+}
+
+.MuiButton-root:hover{
+  border-bottom: 2px solid #56cc9d;
+}
+
+.Main-logo{
+  margin-left: -15px;
+  font-size: 25px;
+  color:white;
+}
+
+.Sakura{
+  color: #64b1f3;
+}
+
+.spring{
+  color:white;
+  float:right;
+}
