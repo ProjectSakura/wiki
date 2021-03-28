@@ -142,10 +142,10 @@ export default function PersistentDrawerLeft() {
                 
               >
                 <div>
-                  <h2 className={"Main-logo"}><span>Project</span>
-                  <span className={"Sakura"}> Sakura</span></h2>
+                  <h2 className="Main-logo"><span>Project</span>
+                  <span className="Sakura"> Sakura</span></h2>
                 </div>
-                <div className={"spring"}>
+                <div className="spring">
                   <h6>
                     <i>feels like spring</i>
                   </h6>
