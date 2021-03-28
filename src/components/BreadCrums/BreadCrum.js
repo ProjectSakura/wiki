@@ -14,7 +14,7 @@ const BreadCrum = () => {
   return (
     <div className="breadcrum">
       <div className="breadcrum_content">
-        <HomeIcon style={{ backgroundColor: "#1e1e1e" }} /> /{" "}
+        <HomeIcon className="breadcrum-home" /> /{" "}
         {data[3].toUpperCase()} / {data[4] && data[4].toUpperCase()}
       </div>
     </div>
