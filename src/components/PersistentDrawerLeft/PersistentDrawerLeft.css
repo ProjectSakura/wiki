@@ -43,3 +43,19 @@
   color:white;
   float:right;
 }
+
+.drawer_logoname{
+  font-size:20px;
+}
+
+.drawer_sakura{
+  color: #56cc9d;
+}
+
+.drawer_project{
+  color:whitesmoke;
+}
+
+.drawer_elements:hover{
+  background-color: #2c2b2b8c !important;
+}

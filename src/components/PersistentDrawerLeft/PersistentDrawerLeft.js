@@ -190,7 +190,7 @@ export default function PersistentDrawerLeft() {
           className={classes.drawerHeader}
           style={{
             zIndex: 1,
-            backgroundColor: "white",
+            backgroundColor: "#1e1e1e",
             position: "fixed",
             width: drawerWidth,
           }}
@@ -203,15 +203,17 @@ export default function PersistentDrawerLeft() {
             }}
           >
             <img
-              style={{ width: "40px", height: "40px", borderRadius: "20px" }}
+              style={{ width: "40px", height: "40px", borderRadius: "20px", marginRight: "7px" }}
               src="https://avatars.githubusercontent.com/u/60218698?s=400&u=f45b9471159098e69cb0f2acc3b8c5947ce6dabc&v=4"
               alt="logo"
             />
             <div>
-              <h4>Project Sakura</h4>
+              <h4 className="drawer_logoname"><span className="drawer_project">Project</span><span className="drawer_sakura"> Sakura</span></h4>
             </div>
           </div>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton style={{
+                              color: "whitesmoke"
+                            }} onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
             ) : (
@@ -219,24 +221,29 @@ export default function PersistentDrawerLeft() {
             )}
           </IconButton>
         </div>
-        <div style={{ marginTop: "55px" }}>
+        <div style={{ marginTop: "55px", backgroundColor: "#1e1e1e", color:"whitesmoke"}}>
           {data.map((elem1) => {
             return (
               <>
                 <Divider />
-                <ListItem button key={elem1.topname}>
-                  <ListItemIcon>{elem1.topicon}</ListItemIcon>
+                <ListItem className="drawer_elements" button key={elem1.topname}>
+                  <ListItemIcon style={{
+                              color: "whitesmoke"
+                            }}>{elem1.topicon}</ListItemIcon>
                   <ListItemText primary={elem1.topname} />
                 </ListItem>
                 <List style={{ padding: "0px" }}>
                   {elem1.content.map((insideelem) => (
                     <Link to={insideelem.url}>
-                      <ListItem button key={insideelem.url}>
-                        <ListItemIcon>{insideelem.icon}</ListItemIcon>
+                      <ListItem className="drawer_elements" button key={insideelem.url}>
+                        <ListItemIcon style={{
+                              color: "whitesmoke"
+                            }}>{insideelem.icon}</ListItemIcon>
                         <ListItemText>
                           <div
                             style={{
                               textDecoration: "none",
+                              color: "whitesmoke"
                             }}
                           >
                             {insideelem.name}
