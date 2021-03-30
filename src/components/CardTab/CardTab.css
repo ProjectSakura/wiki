@@ -8,7 +8,9 @@
   border-radius: 4px;
   padding-bottom: 10px;
 }
-
+.card_list {
+  width: 100%;
+}
 .card_heading {
   padding: 10px 0px;
   display: flex;
@@ -27,7 +29,7 @@
   justify-content: center;
 }
 .card_listitem {
-  padding: 10px 0px;
+  padding: 10px 10px;
   display: flex;
   width: 100%;
   align-items: center;

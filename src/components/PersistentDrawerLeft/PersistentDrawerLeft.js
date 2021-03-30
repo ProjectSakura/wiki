@@ -5,6 +5,7 @@ import data from "../data/sidenav";
 import { Link } from "react-router-dom";
 import BreadCrum from "../BreadCrums/BreadCrum";
 import CardTab from "../CardTab/CardTab";
+import filedata from "../data/data";
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -22,7 +23,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
-import { red } from "@material-ui/core/colors";
+import { useParams, withRouter } from "react-router-dom";
 
 const drawerWidth = 280;
 
@@ -89,11 +90,26 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
 }));
 
-export default function PersistentDrawerLeft() {
+function PersistentDrawerLeft() {
+  const { pathid } = useParams();
+
   const classes = useStyles();
   const theme = useTheme();
+
+  const [filldata, setfilldata] = React.useState({});
+  const [midcontent, setmidcontent] = React.useState(null);
+  useEffect(() => {
+    console.log(window.location.href.split("/")[3]);
+    const dataa = filedata.filter(
+      (elem) => elem.url === "/" + window.location.href.split("/")[3]
+    );
+
+    setmidcontent(dataa[0].icon);
+    console.log(dataa[0]);
+  }, [pathid, window.location.href]);
+
   const [open, setOpen] = React.useState(true);
-  
+
   const [width, setWidth] = React.useState(window.innerWidth);
 
   const updateWidthAndHeight = () => {
@@ -123,7 +139,10 @@ export default function PersistentDrawerLeft() {
         })}
       >
         <Toolbar>
-          <div className={classes.title} style={{ display: "flex", alignItems: "center", }}>
+          <div
+            className={classes.title}
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -132,18 +151,23 @@ export default function PersistentDrawerLeft() {
               className={clsx(classes.menuButton, open && classes.hide)}
             >
               <img
-                style={{ width: "50px", height: "50px", borderRadius: "20px", paddingBottom: "2px"}}
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "20px",
+                  paddingBottom: "2px",
+                }}
                 src="https://avatars.githubusercontent.com/u/60218698?s=400&u=f45b9471159098e69cb0f2acc3b8c5947ce6dabc&v=4"
                 alt="logo"
               />
             </IconButton>
             {!open && (
-              <div
-                
-              >
+              <div>
                 <div>
-                  <h2 className="Main-logo"><span>Project</span>
-                  <span className="Sakura"> Sakura</span></h2>
+                  <h2 className="Main-logo">
+                    <span>Project</span>
+                    <span className="Sakura"> Sakura</span>
+                  </h2>
                 </div>
                 <div className="spring">
                   <h6>
@@ -203,17 +227,28 @@ export default function PersistentDrawerLeft() {
             }}
           >
             <img
-              style={{ width: "40px", height: "40px", borderRadius: "20px", marginRight: "7px" }}
+              style={{
+                width: "40px",
+                height: "40px",
+                borderRadius: "20px",
+                marginRight: "7px",
+              }}
               src="https://avatars.githubusercontent.com/u/60218698?s=400&u=f45b9471159098e69cb0f2acc3b8c5947ce6dabc&v=4"
               alt="logo"
             />
             <div>
-              <h4 className="drawer_logoname"><span className="drawer_project">Project</span><span className="drawer_sakura"> Sakura</span></h4>
+              <h4 className="drawer_logoname">
+                <span className="drawer_project">Project</span>
+                <span className="drawer_sakura"> Sakura</span>
+              </h4>
             </div>
           </div>
-          <IconButton style={{
-                              color: "whitesmoke"
-                            }} onClick={handleDrawerClose}>
+          <IconButton
+            style={{
+              color: "whitesmoke",
+            }}
+            onClick={handleDrawerClose}
+          >
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
             ) : (
@@ -221,29 +256,51 @@ export default function PersistentDrawerLeft() {
             )}
           </IconButton>
         </div>
-        <div style={{ marginTop: "55px", backgroundColor: "#1e1e1e", color:"whitesmoke"}}>
+        <div
+          style={{
+            marginTop: "55px",
+            backgroundColor: "#1e1e1e",
+            color: "whitesmoke",
+          }}
+        >
           {data.map((elem1) => {
             return (
               <>
                 <Divider />
-                <ListItem className="drawer_elements" button key={elem1.topname}>
-                  <ListItemIcon style={{
-                              color: "whitesmoke"
-                            }}>{elem1.topicon}</ListItemIcon>
+                <ListItem
+                  className="drawer_elements"
+                  button
+                  key={elem1.topname}
+                >
+                  <ListItemIcon
+                    style={{
+                      color: "whitesmoke",
+                    }}
+                  >
+                    {elem1.topicon}
+                  </ListItemIcon>
                   <ListItemText primary={elem1.topname} />
                 </ListItem>
                 <List style={{ padding: "0px" }}>
                   {elem1.content.map((insideelem) => (
                     <Link to={insideelem.url}>
-                      <ListItem className="drawer_elements" button key={insideelem.url}>
-                        <ListItemIcon style={{
-                              color: "whitesmoke"
-                            }}>{insideelem.icon}</ListItemIcon>
+                      <ListItem
+                        className="drawer_elements"
+                        button
+                        key={insideelem.url}
+                      >
+                        <ListItemIcon
+                          style={{
+                            color: "whitesmoke",
+                          }}
+                        >
+                          {insideelem.icon}
+                        </ListItemIcon>
                         <ListItemText>
                           <div
                             style={{
                               textDecoration: "none",
-                              color: "whitesmoke"
+                              color: "whitesmoke",
                             }}
                           >
                             {insideelem.name}
@@ -268,9 +325,12 @@ export default function PersistentDrawerLeft() {
           <BreadCrum />
           <div className="main_content_cards">
             <CardTab />
+            {midcontent}
           </div>
         </main>
       )}
     </div>
   );
 }
+
+export default withRouter(PersistentDrawerLeft);
