@@ -53,6 +53,9 @@ a {
   color: #b3d4fc;
   background-color: #1e1e1e;
 }
+.mascot {
+  width: 100%;
+}
 @media (max-width: 567px) {
   .card_table_of_content {
     width: 100%;
