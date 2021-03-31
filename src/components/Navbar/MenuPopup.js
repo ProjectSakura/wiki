@@ -3,6 +3,8 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from '@material-ui/icons/Close';
+import "./MenuPopup.css";
 
 import {
     usePopupState,
@@ -14,12 +16,13 @@ import {
     const popupState = usePopupState({ variant: 'popover', popupId: 'demoMenu' })
     return (
       <div>
-         <MenuIcon {...bindTrigger(popupState)}/>
-        <Menu {...bindMenu(popupState)}>
-          <MenuItem onClick={popupState.close}>Home</MenuItem>
-          <MenuItem onClick={popupState.close}>Downloads</MenuItem>
-          <MenuItem onClick={popupState.close}>Stats</MenuItem>
-          <MenuItem onClick={popupState.close}>Blog</MenuItem>
+         <MenuIcon {...bindTrigger(popupState)}/>        
+        <Menu className="menu_popup" {...bindMenu(popupState)}> 
+         <CloseIcon className="menu_close" onClick={popupState.close}/>      
+          <MenuItem className="menu_items" href="#">Home</MenuItem>
+          <MenuItem className="menu_items" href="#">Downloads</MenuItem>
+          <MenuItem className="menu_items" href="#">Stats</MenuItem>
+          <MenuItem className="menu_items" href="#">Blog</MenuItem>
         </Menu>
       </div>
     )
