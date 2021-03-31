@@ -10,12 +10,13 @@ import NavigationIcon from "@material-ui/icons/Navigation";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
-import HomeIcon from "@material-ui/icons/Home";
-import SettingEnv from "../Guides/SettingEnv";
+import SettingEnv from "../Guides/SettingEnv/SettingEnv";
+import Home from "../Guides/Home/Home";
+
 const filedata = [
   {
-    name: "Setting up environment",
-    icon: <SettingEnv />,
+    name: "home",
+    icon: <Home />,
     url: "/",
   },
   {

@@ -5,7 +5,7 @@ const SettingEnv = () => {
   return (
     <div className="environment">
       <center>
-        <img alt="data" src="../../../projectSakura.png"></img>
+        <div className="content"></div>
       </center>
     </div>
   );

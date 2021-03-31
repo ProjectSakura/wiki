@@ -15,25 +15,30 @@ const CardTab = () => {
         <div className="card_list">
           <h5 className="card_heading">Talk with us</h5>
           <div className="card_listitem">
-            <WebIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://projectsakura.xyz">Website</a>
+            <WebIcon style={{ backgroundColor: "#1e1e1e" }} />
+            <a href="https://projectsakura.xyz">Website</a>
           </div>
           <div className="card_listitem">
-            <GetAppIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://projectsakura.xyz/download">Download</a>
+            <GetAppIcon style={{ backgroundColor: "#1e1e1e" }} />
+            <a href="https://projectsakura.xyz/download">Download</a>
           </div>
           <div className="card_listitem">
-            <EqualizerIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://projectsakura.xyz/stats.html">Stats</a>
-          </div>          
-          <div className="card_listitem">
-            <GitHubIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://github.com/ProjectSakura">Github</a>
+            <EqualizerIcon style={{ backgroundColor: "#1e1e1e" }} />
+            <a href="https://projectsakura.xyz/stats.html">Stats</a>
           </div>
           <div className="card_listitem">
-            <TelegramIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://t.me/ProjectSakura">Telegram </a>
-          </div>          
+            <GitHubIcon style={{ backgroundColor: "#1e1e1e" }} />
+            <a href="https://github.com/ProjectSakura">Github</a>
+          </div>
+          <div className="card_listitem">
+            <TelegramIcon style={{ backgroundColor: "#1e1e1e" }} />
+            <a href="https://t.me/ProjectSakura">Telegram </a>
+          </div>
         </div>
       </div>
       <div className="mascot">
         <center>
-          <h4>Our Mascot</h4>
+          <h4 style={{ color: "white" }}>Our Mascot</h4>
           <img
             src={Mascot}
             style={{ width: "100%" }}
