@@ -1,0 +1,41 @@
+.menu_popup{
+    margin:0;
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+  }
+  
+  .MuiPopover-paper{
+    margin:0;
+    height: 100%;
+    width: 100%;
+    background-color: #171717 !important;
+    box-shadow: none !important;
+  }
+  
+  .menu_items{
+    font-size: 25px !important;
+    margin-top: 40px !important;
+    color: whitesmoke !important;
+  }
+
+  .menu_span{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu_items:active{
+    color: rgb(0, 204, 255) !important;
+    background-color: #383838 !important;
+  }
+  
+  .menu_close{
+    color:rgb(0, 204, 255);
+    float: right;
+  }
+  
+  .menu_close:active, .menu_close:focus{
+   outline: none;
+   border: none;
+  }
+  
