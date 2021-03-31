@@ -1,7 +1,6 @@
 {
-  "name": "wiki",
+  "name": "wiki-redesign",
   "version": "0.1.0",
-  "homepage": "http://ProjectSakura.github.io/wiki-redesign",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -17,12 +16,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
