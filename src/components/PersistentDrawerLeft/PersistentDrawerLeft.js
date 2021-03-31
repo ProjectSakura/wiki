@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 import BreadCrum from "../BreadCrums/BreadCrum";
 import CardTab from "../CardTab/CardTab";
 import filedata from "../data/data";
-
+import MenuPopup from "../Navbar/MenuPopup"
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -24,6 +26,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
 import { useParams, withRouter } from "react-router-dom";
+
 
 const drawerWidth = 280;
 
@@ -193,10 +196,8 @@ function PersistentDrawerLeft() {
               </Button>
             </div>
           )}
-          {width <= 720 && (
-            <IconButton style={{ color: "white" }}>
-              <MenuIcon />
-            </IconButton>
+          {width <= 720 && (           
+              <MenuPopup/>         
           )}
         </Toolbar>
       </AppBar>
