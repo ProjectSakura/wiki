@@ -270,17 +270,13 @@ function PersistentDrawerLeft() {
                 <Divider />
                 <ListItem
                   className="drawer_elements"
-                  button
                   key={elem1.topname}
                 >
-                  <ListItemIcon
-                    style={{
-                      color: "whitesmoke",
-                    }}
-                  >
-                    {elem1.topicon}
-                  </ListItemIcon>
-                  <ListItemText primary={elem1.topname} />
+                <ListItemText primary={elem1.topname} 
+                style={{
+                color: "#00ccff",
+                }}
+                />
                 </ListItem>
                 <List style={{ padding: "0px" }}>
                   {elem1.content.map((insideelem) => (
@@ -292,7 +288,7 @@ function PersistentDrawerLeft() {
                       >
                         <ListItemIcon
                           style={{
-                            color: "whitesmoke",
+                            color: "#00ccff",
                           }}
                         >
                           {insideelem.icon}
