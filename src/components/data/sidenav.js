@@ -1,5 +1,6 @@
 import SettingsOverscanIcon from "@material-ui/icons/SettingsOverscan";
 import ReportProblemIcon from "@material-ui/icons/ReportProblem";
+import BuildSakuraIcon from "@material-ui/icons/Build"
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import GroupAddIcon from "@material-ui/icons/GroupAdd";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
@@ -15,13 +16,13 @@ import HomeIcon from "@material-ui/icons/Home";
 
 const data = [
   {
-    topname: "Guides",
+    topname: "Basic Info",
     topicon: <HomeIcon />,
     content: [
       {
-        name: "Setting up environment",
-        icon: <SettingsOverscanIcon />,
-        url: "/environment",
+        name: "Building Sakura",
+        icon: <BuildSakuraIcon />,
+        url: "/build-sakura",
       },
       {
         name: "Reporting a bug",

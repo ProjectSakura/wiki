@@ -1,4 +1,3 @@
-import ReportProblemIcon from "@material-ui/icons/ReportProblem";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import GroupAddIcon from "@material-ui/icons/GroupAdd";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
@@ -11,7 +10,10 @@ import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import HomeIcon from "@material-ui/icons/Home";
-import SettingEnv from "../Guides/SettingEnv";
+import SettingEnv from "../Guides/SettingEnv/SettingEnv";
+import ReportBug from "../Guides/ReportBug/ReportBug";
+import BuildSakuraIcon from "@material-ui/icons/Build"
+
 const filedata = [
   {
     name: "Setting up environment",
@@ -19,13 +21,13 @@ const filedata = [
     url: "/",
   },
   {
-    name: "Setting up environment",
-    icon: <SettingEnv />,
-    url: "/environment",
-  },
+    name: "Build Sakura",
+    icon: <BuildSakuraIcon />,
+    url: "/build-sakura",
+  },  
   {
     name: "Reporting a bug",
-    icon: <ReportProblemIcon />,
+    icon: <ReportBug />,
     url: "/report-bug",
   },
   {

@@ -7,7 +7,7 @@ const SettingEnv = () => {
     <div className="environment">
       <center>
         <div className="content">
-          <img className="home_image" alt="data" src={image}></img>
+          <img className="home_image" alt="data" src={image}></img>        
           <h1>Setting up Environments to build Project Sakura</h1>
           <h3>WELCOME TO PROJECT SAKURA 🌸🌷 WIKI</h3>
           <h3>
