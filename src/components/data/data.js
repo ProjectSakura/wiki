@@ -12,7 +12,7 @@ import EqualizerIcon from "@material-ui/icons/Equalizer";
 import HomeIcon from "@material-ui/icons/Home";
 import SettingEnv from "../Guides/SettingEnv/SettingEnv";
 import ReportBug from "../Guides/ReportBug/ReportBug";
-import BuildSakuraIcon from "@material-ui/icons/Build"
+import BuildSakura from "../Guides/BuildSakura/BuildSakura";
 
 const filedata = [
   {
@@ -22,7 +22,7 @@ const filedata = [
   },
   {
     name: "Build Sakura",
-    icon: <BuildSakuraIcon />,
+    icon: <BuildSakura />,
     url: "/build-sakura",
   },  
   {

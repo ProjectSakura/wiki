@@ -1,34 +1,59 @@
 import React from "react";
-import "./ReportBug.css";
+import "./BuildSakura.css";
+import SyntaxHighLighter from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
-const ReportBug = () => {
+const BuildSakura = () => {
   return (
     <div className="environment">
       <center>
         <div className="content">
-          <h2>REPORTING A BUG</h2>
-          <p>Here we will guide you on how to report a bug related to Project Sakura</p>
+          <h2>BUILDING SAKURA</h2>
+          <p>Here we will guide you on how to build Project Sakura for your device.</p>
           <hr />          
-          <h2>WHERE SHOULD I REPORT BUGS</h2>
-          <p>You can report Bugs that are related to our Source on our <a href="https://github.com/ProjectSakura/Bug_Tracker" target="_blank">Bug Reports Repo.</a>
+          <h2>HOW TO SETUP A BUILD ENVIRONMENT</h2>
+          <p>To Build Project Sakura you can use any 64 Bit Linux Distro, though we recommend using Ubuntu 18.04, LinuxMint, MXLinux or Manjaro. You can setup the build environment using  
+          <a href="https://github.com/akhilnarang/scripts" target="_blank"> Akhil Narang's Script</a> 
+          <br /><br />
+          <SyntaxHighLighter language="bash" style={dracula}>
+          {
+          "git clone https://github.com/akhilnarang/scripts; cd scripts; sudo bash setup/android_build_env.sh"
+          }
+          </SyntaxHighLighter>
           <br />
-          If you are facing a bug related to a specific device then you can report about it to the device maintainer in our Telegram Chat or the device specific support Group.
+          Or You can install all the packages manually using the commands below. 
+          <br /><br />
+          <SyntaxHighLighter language="bash" style={dracula}>
+          {
+           "sudo apt-get install openjdk-8-jdk && sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib maven tmux screen w3m ncftp"
+          }
+          </SyntaxHighLighter>
           </p>
           <hr />
-          <h2>WHAT DO I NEED TO INCLUDE IN THE BUG REPORT </h2>
-          <p>If you are going to report the bug on our Bug report Repo then you can use the template that we have designed for opening Issues there. 
-          <br />
-          If you are going to report any device specific bug then you will need to write the description of the bug and properly explain the procedure of 
-          reproducing the bug. It is also required to attach screenshots or a logcat. 
+          <h2>SYNCING SOURCES </h2>
+          <p>To Sync ProjectSakura Sources you will need to execute the following command <br />
+          (PS: This command will shallow sync the sources which saves bandwidth and storage space if you are just going to build and not do any source side changes.)
+          <br /><br />
+          <SyntaxHighLighter language="bash" style={dracula}>
+          {
+          	"repo init --depth=1 -u git://github.com/ProjectSakura/android.git -b 11 && repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j `nproc`"
+          }
+          </SyntaxHighLighter>          
           </p>
           <hr />
-          <h2>HOW TO TAKE LOGCATS </h2>
-          <p>You can follow this amazing article to know how to properly take log using both ADB and Any Logcat Application,
-          <a href="https://telegra.ph/BUG-REPORTING-GUIDE-FOR-DUMMIES-10-05" target="_blank"> Follow this link</a></p>
+          <h2>BUILDING SAKURA </h2>
+          <p>Now execute the below command to start building ProjectSakura, replace "devicecodename" with your device's code. E.g, for ASUS ZENFONE MAX PRO M1 we will write X00T.
+          <br /><br />
+          <SyntaxHighLighter language="bash" style={dracula}>
+          {
+          	". build/envsetup.sh && lunch lineage_devicecodename-userdebug && mka bacon -jx"
+          }
+          </SyntaxHighLighter>  
+          </p>
         </div>
       </center>
     </div>
   );
 };
 
-export default ReportBug;
+export default BuildSakura;
