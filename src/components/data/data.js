@@ -14,6 +14,7 @@ import SettingEnv from "../Guides/SettingEnv/SettingEnv";
 import ReportBug from "../Guides/ReportBug/ReportBug";
 import BuildSakura from "../Guides/BuildSakura/BuildSakura";
 import InstallSakura from "../Guides/InstallSakura/InstallSakura";
+import ApplyMaintainers from "../Guides/ApplyMaintainers/ApplyMaintainers";
 
 const filedata = [
   {
@@ -39,7 +40,7 @@ const filedata = [
 
   {
     name: "Apply for maintainership",
-    icon: <GroupAddIcon />,
+    icon: <ApplyMaintainers />,
     url: "/apply",
   },
   {
