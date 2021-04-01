@@ -25,15 +25,15 @@ const data = [
         url: "/build-sakura",
       },
       {
-        name: "Reporting a bug",
-        icon: <ReportProblemIcon />,
-        url: "/report-bug",
-      },
-      {
         name: "Installing Sakura",
         icon: <CloudDownloadIcon />,
         url: "/install-sakura",
       },
+      {
+        name: "Reporting a bug",
+        icon: <ReportProblemIcon />,
+        url: "/report-bug",
+      },      
     ],
   },
   {

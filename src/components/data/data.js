@@ -13,6 +13,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import SettingEnv from "../Guides/SettingEnv/SettingEnv";
 import ReportBug from "../Guides/ReportBug/ReportBug";
 import BuildSakura from "../Guides/BuildSakura/BuildSakura";
+import InstallSakura from "../Guides/InstallSakura/InstallSakura";
 
 const filedata = [
   {
@@ -32,7 +33,7 @@ const filedata = [
   },
   {
     name: "Installing Sakura",
-    icon: <CloudDownloadIcon />,
+    icon: <InstallSakura />,
     url: "/install-sakura",
   },
 
