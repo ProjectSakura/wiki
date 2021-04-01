@@ -7,3 +7,6 @@
 a {
   text-decoration: none;
 }
+body {
+  background: radial-gradient(circle farthest-side, #000000, #292929);
+}
