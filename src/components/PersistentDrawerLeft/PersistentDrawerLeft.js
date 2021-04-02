@@ -103,9 +103,10 @@ function PersistentDrawerLeft() {
   const [filldata, setfilldata] = React.useState({});
   const [midcontent, setmidcontent] = React.useState(null);
   useEffect(() => {
-    console.log(window.location.href.split("/")[3]);
+    console.log(window.location.href.split("/"));
     const dataa = filedata.filter(
-      (elem) => elem.url === "/" + window.location.href.split("/")[3]
+      (elem) =>
+        elem.url === "/wiki-redesign/" + window.location.href.split("/")[4]
     );
 
     setmidcontent(dataa[0].icon);

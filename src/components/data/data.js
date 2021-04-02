@@ -21,73 +21,73 @@ const filedata = [
   {
     name: "Setting up environment",
     icon: <SettingEnv />,
-    url: "/",
+    url: "/wiki-redesign/",
   },
   {
     name: "Build Sakura",
     icon: <BuildSakura />,
-    url: "/build-sakura",
-  },  
+    url: "/wiki-redesign/build-sakura",
+  },
   {
     name: "Reporting a bug",
     icon: <ReportBug />,
-    url: "/report-bug",
+    url: "/wiki-redesign/report-bug",
   },
   {
     name: "Installing Sakura",
     icon: <InstallSakura />,
-    url: "/install-sakura",
+    url: "/wiki-redesign/install-sakura",
   },
 
   {
     name: "Apply for maintainership",
     icon: <ApplyMaintainers />,
-    url: "/apply",
+    url: "/wiki-redesign/apply",
   },
   {
     name: "Build Flags",
     icon: <BuildFlags />,
-    url: "/build-flags",
+    url: "/wiki-redesign/build-flags",
   },
   {
     name: "Animation",
     icon: <SlideshowIcon />,
-    url: "/animation",
+    url: "/wiki-redesign/animation",
   },
   {
     name: "Gestures",
     icon: <GestureTwoToneIcon />,
-    url: "/gestures",
+    url: "/wiki-redesign/gestures",
   },
   {
     name: "Hardware Buttons",
     icon: <TouchAppIcon />,
-    url: "/hardware-buttons",
+    url: "/wiki-redesign/hardware-buttons",
   },
   {
     name: "Miscellaneous",
     icon: <GestureTwoToneIcon />,
-    url: "/miscellaneous",
+    url: "/wiki-redesign/miscellaneous",
   },
   {
     name: "Navigation",
     icon: <NavigationIcon />,
-    url: "/navigation",
+    url: "/wiki-redesign/navigation",
   },
   {
     name: "Notification",
     icon: <NotificationsActiveIcon />,
-    url: "/notification",
+    url: "/wiki-redesign/notification",
   },
   {
     name: "Power Menu",
     icon: <PowerSettingsNewIcon />,
-    url: "/power-menu",
+    url: "/wiki-redesign/power-menu",
   },
   {
     name: "Statusbar",
     icon: <EqualizerIcon />,
-    url: "/statusbar",
+    url: "/wiki-redesign/statusbar",
   },
 ];
 export default filedata;

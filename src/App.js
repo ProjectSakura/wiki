@@ -3,11 +3,11 @@ import PersistentDrawerLeft from "./components/PersistentDrawerLeft/PersistentDr
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <Router>
+    <Router basename="/wiki-redesign">
       <div className="App">
         <PersistentDrawerLeft />
         <Switch>
-          <Route path="/:pathid"></Route>
+          <Route path="/wiki-redesign/:pathid"></Route>
         </Switch>
       </div>
     </Router>
