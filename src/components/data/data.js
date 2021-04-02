@@ -15,6 +15,7 @@ import ReportBug from "../Guides/ReportBug/ReportBug";
 import BuildSakura from "../Guides/BuildSakura/BuildSakura";
 import InstallSakura from "../Guides/InstallSakura/InstallSakura";
 import ApplyMaintainers from "../Guides/ApplyMaintainers/ApplyMaintainers";
+import BuildFlags from "../Guides/BuildFlags/BuildFlags";
 
 const filedata = [
   {
@@ -44,14 +45,9 @@ const filedata = [
     url: "/apply",
   },
   {
-    name: "Support new device",
-    icon: <PhoneAndroidIcon />,
-    url: "/support-us",
-  },
-  {
-    name: "Code of Conduct",
-    icon: <BookIcon />,
-    url: "/code-of-conduct",
+    name: "Build Flags",
+    icon: <BuildFlags />,
+    url: "/build-flags",
   },
   {
     name: "Animation",

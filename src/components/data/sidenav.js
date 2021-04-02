@@ -47,14 +47,9 @@ const data = [
         url: "/apply",
       },
       {
-        name: "Support new device",
-        icon: <PhoneAndroidIcon />,
-        url: "/support-us",
-      },
-      {
-        name: "Code of Conduct",
+        name: "Build Flags",
         icon: <BookIcon />,
-        url: "/code-of-conduct",
+        url: "/build-flags",
       },
     ],
   },
