@@ -28,6 +28,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
 import { useParams, withRouter } from "react-router-dom";
+import SettingEnv from "../Guides/SettingEnv/SettingEnv";
 
 const drawerWidth = 280;
 
@@ -108,8 +109,11 @@ function PersistentDrawerLeft() {
       (elem) =>
         elem.url === "/wiki-redesign/" + window.location.href.split("/")[4]
     );
-
-    setmidcontent(dataa[0].icon);
+    if (dataa[0] === undefined) {
+      setmidcontent(<SettingEnv />);
+    } else {
+      setmidcontent(dataa[0].icon);
+    }
     console.log(dataa[0]);
   }, [pathid, window.location.href]);
 
