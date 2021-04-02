@@ -55,6 +55,9 @@ a {
 }
 .mascot {
   width: 100%;
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
 }
 @media (max-width: 567px) {
   .card_table_of_content {

@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import BreadCrum from "../BreadCrums/BreadCrum";
 import CardTab from "../CardTab/CardTab";
 import filedata from "../data/data";
-import MenuPopup from "../Navbar/MenuPopup"
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import MenuPopup from "../Navbar/MenuPopup";
+import Image from "./logo.png";
+
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -26,7 +28,6 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
 import { useParams, withRouter } from "react-router-dom";
-
 
 const drawerWidth = 280;
 
@@ -160,7 +161,7 @@ function PersistentDrawerLeft() {
                   borderRadius: "20px",
                   paddingBottom: "2px",
                 }}
-                src="https://avatars.githubusercontent.com/u/60218698?s=400&u=f45b9471159098e69cb0f2acc3b8c5947ce6dabc&v=4"
+                src={Image}
                 alt="logo"
               />
             </IconButton>
@@ -196,9 +197,7 @@ function PersistentDrawerLeft() {
               </Button>
             </div>
           )}
-          {width <= 720 && (           
-              <MenuPopup/>         
-          )}
+          {width <= 720 && <MenuPopup />}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -234,7 +233,7 @@ function PersistentDrawerLeft() {
                 borderRadius: "20px",
                 marginRight: "7px",
               }}
-              src="https://avatars.githubusercontent.com/u/60218698?s=400&u=f45b9471159098e69cb0f2acc3b8c5947ce6dabc&v=4"
+              src={Image}
               alt="logo"
             />
             <div>
@@ -268,15 +267,13 @@ function PersistentDrawerLeft() {
             return (
               <>
                 <Divider />
-                <ListItem
-                  className="drawer_elements"
-                  key={elem1.topname}
-                >
-                <ListItemText primary={elem1.topname} 
-                style={{
-                color: "#00ccff",
-                }}
-                />
+                <ListItem className="drawer_elements" key={elem1.topname}>
+                  <ListItemText
+                    primary={elem1.topname}
+                    style={{
+                      color: "#00ccff",
+                    }}
+                  />
                 </ListItem>
                 <List style={{ padding: "0px" }}>
                   {elem1.content.map((insideelem) => (

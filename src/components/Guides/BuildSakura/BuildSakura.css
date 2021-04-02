@@ -17,3 +17,11 @@
   margin-top: 2%;
   margin-right: 5%;
 }
+.wrapper {
+  width: 600px;
+}
+@media (max-width: 567px) {
+  .wrapper {
+    width: 300px;
+  }
+}

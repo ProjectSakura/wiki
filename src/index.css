@@ -8,5 +8,6 @@ a {
   text-decoration: none;
 }
 body {
-  background: radial-gradient(circle farthest-side, #000000, #292929);
+  background-color: radial-gradient(circle farthest-side, #1e1e1e, #292929);
+  background: radial-gradient(circle farthest-side, #1e1e1e, #292929);
 }
