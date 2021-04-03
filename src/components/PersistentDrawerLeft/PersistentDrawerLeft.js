@@ -106,8 +106,7 @@ function PersistentDrawerLeft() {
   useEffect(() => {
     console.log(window.location.href.split("/"));
     const dataa = filedata.filter(
-      (elem) =>
-        elem.url === "/wiki-redesign/" + window.location.href.split("/")[4]
+      (elem) => elem.url === "/wiki/" + window.location.href.split("/")[4]
     );
     if (dataa[0] === undefined) {
       setmidcontent(<SettingEnv />);
