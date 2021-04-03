@@ -1,0 +1,18 @@
+.footer_div{
+    /* align-items: center; */
+    text-align: center;
+    color: whitesmoke;
+    background-color: #1e1e1e;
+    cursor: default;
+    /* height: 50px; */
+}
+
+.footer_sakura{
+    color: #56cc9d;
+}
+
+@media (max-width: 720px) {
+    .footer_div{
+      font-size: 11px;
+    }
+  }
