@@ -29,8 +29,7 @@ const SettingEnv = () => {
 
           <h4>
             Designed by Cryptofox17
-            <br /> This Wiki is completely created from scratch by ArunTeltia
-            ,Diksha and LordShenron. <br />© All Rights Reserved 2020-2021,
+            <br /> This Wiki is completely created from scratch by ArunTeltia, FireQueen-3010 and LordShenron. <br />© All Rights Reserved 2020-2021,
             ProjectSakura
           </h4>
         </div>
