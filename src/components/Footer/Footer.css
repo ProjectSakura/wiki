@@ -1,5 +1,6 @@
 .footer_div{
     /* align-items: center; */
+    width: 100%;
     text-align: center;
     color: whitesmoke;
     background-color: #1e1e1e;
@@ -13,6 +14,8 @@
 
 @media (max-width: 720px) {
     .footer_div{
+      margin:0;
+      width:100%;
       font-size: 11px;
     }
   }
