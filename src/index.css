@@ -10,6 +10,10 @@ a {
 body {
   background-color: radial-gradient(circle farthest-side, #1e1e1e, #292929);
   background: radial-gradient(circle farthest-side, #1e1e1e, #292929);
+  /*scrollbar for firefox*/
+  overflow-y: scroll;
+  scrollbar-color: #00ccff black;
+  scrollbar-width: auto;
 }
 
 /*chrome and safari*/
@@ -40,11 +44,4 @@ body::-webkit-scrollbar-thumb {
     #00ccff,
     #56cc9d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-/*for firefox*/
-body {
-  overflow-y: scroll;
-  scrollbar-color: #00ccff black;
-  scrollbar-width: auto;
 }
