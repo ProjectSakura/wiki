@@ -1,6 +1,35 @@
+/*chrome and safari*/
 .MuiDrawer-paper::-webkit-scrollbar {
-  display: none;
+  width: 0.5em;
+  background-color: #000000;
 }
+
+.MuiDrawer-paper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0);
+  background-clip: content-box;
+}
+
+.MuiDrawer-paper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.24, #00ccff),
+    color-stop(0.78, #b3d4fc),
+    color-stop(0.86, #00ccff)
+  );
+}
+
+/*for firefox*/
+.MuiDrawer-paper {
+  overflow-y: scroll;
+  scrollbar-color: #00ccff black;
+  scrollbar-width: thin;
+}
+
 .side-list-item {
   text-decoration: none;
 }
@@ -15,46 +44,46 @@
   }
 }
 
-.MuiToolbar-root{
+.MuiToolbar-root {
   display: flex;
   background-color: #1e1e1e;
   color: #b3d4fc;
 }
 
-.MuiToolbar-root>button{
+.MuiToolbar-root > button {
   color: #b3d4fc;
 }
 
-.MuiButton-root:hover{
+.MuiButton-root:hover {
   border-bottom: 2px solid #56cc9d;
 }
 
-.Main-logo{
+.Main-logo {
   margin-left: -15px;
   font-size: 25px;
-  color:white;
+  color: white;
 }
 
-.Sakura{
+.Sakura {
   color: #64b1f3;
 }
 
-.spring{
-  color:white;
-  float:right;
+.spring {
+  color: white;
+  float: right;
 }
 
-.drawer_logoname{
-  font-size:15px;
+.drawer_logoname {
+  font-size: 15px;
 }
 
-.drawer_sakura{
+.drawer_sakura {
   color: #56cc9d;
 }
 
-.drawer_project{
-  color:whitesmoke;
+.drawer_project {
+  color: whitesmoke;
 }
 
-.drawer_elements{
+.drawer_elements {
 }
