@@ -1,10 +1,21 @@
-import React from "react";
+import React, {useEffect,useState}  from "react";
+import Loader from "../../Loader/Loader";
 import image from "./projectSakura.png";
 import "./SettingEnv.css";
 
 const SettingEnv = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+  },[])
   return (
     <div className="environment">
+       {loading && (
+    <Loader /> )}
+       {!loading && (
       <center>
         <div className="content">
           <img className="home_image" alt="data" src={image}></img>
@@ -34,6 +45,7 @@ const SettingEnv = () => {
           </h4>
         </div>
       </center>
+       )}
     </div>
   );
 };

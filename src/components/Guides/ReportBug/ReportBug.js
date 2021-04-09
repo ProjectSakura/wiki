@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useEffect,useState}  from "react";
+import Loader from "../../Loader/Loader";
 import "./ReportBug.css";
 
 const ReportBug = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+  },[])
   return (
     <div className="environment">
+       {loading && (
+    <Loader /> )}
+       {!loading && (
       <center>
         <div className="content">
           <h2>REPORTING A BUG</h2>
@@ -27,6 +38,7 @@ const ReportBug = () => {
           <a href="https://telegra.ph/BUG-REPORTING-GUIDE-FOR-DUMMIES-10-05" target="_blank"> Follow this link</a></p>
         </div>
       </center>
+       )}
     </div>
   );
 };

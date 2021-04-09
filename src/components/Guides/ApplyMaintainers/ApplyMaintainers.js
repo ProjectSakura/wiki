@@ -1,10 +1,22 @@
-import React from "react";
+import React, {useEffect,useState}  from "react";
+import Loader from "../../Loader/Loader";
 import "./ApplyMaintainers.css";
 
+
 const ApplyMaintainers = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+  },[])
   return (
     <div className="environment">
-      <center>
+      {loading && (
+    <Loader /> )}
+       {!loading && (
+       <center>
         <div className="content">
           <h2>APPLY FOR PROJECT SAKURA MAINTAINERSHIP </h2>
           <p>In this article we will tell you how you can become an Official ProjectSakura Maintainer.
@@ -35,8 +47,9 @@ const ApplyMaintainers = () => {
           </p>
         </div>
       </center>
+       )}
     </div>
-  );
+  )
 };
 
 export default ApplyMaintainers;
