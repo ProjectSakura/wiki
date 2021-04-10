@@ -29,6 +29,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
 import { useParams, withRouter } from "react-router-dom";
 import SettingEnv from "../Guides/SettingEnv/SettingEnv";
+import Page404 from "../404page/404page";
 
 const drawerWidth = 280;
 
@@ -109,7 +110,7 @@ function PersistentDrawerLeft() {
       (elem) => elem.url === "/wiki/" + window.location.href.split("/")[4]
     );
     if (dataa[0] === undefined) {
-      setmidcontent(<SettingEnv />);
+      setmidcontent(<Page404/>);
     } else {
       setmidcontent(dataa[0].icon);
     }
