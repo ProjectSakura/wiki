@@ -64,6 +64,8 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     // overflow: "hidden",
+     backgroundColor:"#1e1e1e",
+
   },
   drawerHeader: {
     display: "flex",
