@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useEffect,useState}  from "react";
+import Loader from "../../Loader/Loader";
 import "./InstallSakura.css";
 
 const InstallSakura = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+  },[])
   return (
     <div className="environment">
+       {loading && (
+    <Loader /> )}
+       {!loading && (
       <center>
         <div className="content">
           <h2>INSTALLING SAKURA </h2>
@@ -31,6 +42,7 @@ const InstallSakura = () => {
           </p>
         </div>
       </center>
+       )}
     </div>
   );
 };

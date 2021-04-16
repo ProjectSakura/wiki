@@ -1,11 +1,22 @@
-import React from "react";
+import React, {useEffect,useState}  from "react";
+import Loader from "../../Loader/Loader";
 import "./BuildSakura.css";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 const BuildSakura = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+  },[])
   return (
     <div className="environment">
+       {loading && (
+    <Loader /> )}
+       {!loading && (
       <center>
         <div className="content">
           <h2>BUILDING SAKURA</h2>
@@ -81,6 +92,7 @@ const BuildSakura = () => {
           </SyntaxHighLighter>
         </div>
       </center>
+       )}
     </div>
   );
 };
