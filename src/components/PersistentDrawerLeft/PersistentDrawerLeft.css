@@ -52,10 +52,15 @@
 
 .MuiToolbar-root > button {
   color: #b3d4fc;
+  
+   
+
 }
 
 .MuiButton-root:hover {
-  border-bottom: 2px solid #56cc9d;
+  border-bottom: 5px solid #333FFF;
+  
+  
 }
 
 .Main-logo {
@@ -87,3 +92,4 @@
 
 .drawer_elements {
 }
+
