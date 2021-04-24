@@ -40,8 +40,11 @@ body::-webkit-scrollbar-thumb {
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right bottom,
-    #7f7fd5,
+    /* #7f7fd5,
     #00ccff,
-    #56cc9d
+    #56cc9d */
+    #363636,
+    #2f3030,
+    #2e2e2e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
