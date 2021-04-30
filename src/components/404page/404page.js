@@ -1,5 +1,5 @@
 import React from 'react';
-import "./404page.css";
+// import "./404page.css";
 import SettingEnv from "../Guides/SettingEnv/SettingEnv";
 import Image from "./404.gif";
 
