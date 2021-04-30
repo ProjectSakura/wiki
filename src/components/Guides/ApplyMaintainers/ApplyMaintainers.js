@@ -42,7 +42,9 @@ const ApplyMaintainers = () => {
           <p>
           Once you make sure that you are fullfilling all the above guidelines, you can use the Google Form below to apply for Official maintainership.
           <br /> <br />
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKFUSyohdGKQFLEZCxsxCemlcXdKUMPCsShi0TXGJu7ihceg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div >
+            <iframe className="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfKFUSyohdGKQFLEZCxsxCemlcXdKUMPCsShi0TXGJu7ihceg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
+          </div>
           <br /><br />          
           </p>
         </div>
