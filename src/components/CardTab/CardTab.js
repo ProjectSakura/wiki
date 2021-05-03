@@ -1,7 +1,6 @@
 import React from "react";
 import "./CardTab.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import WebIcon from "@material-ui/icons/Web";
@@ -22,13 +21,13 @@ const CardTab = () => {
           </div>
           <div className="card_listitem">
             <EqualizerIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://projectsakura.xyz/stats.html">Stats</a>
-          </div>          
+          </div>
           <div className="card_listitem">
             <GitHubIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://github.com/ProjectSakura">Github</a>
           </div>
           <div className="card_listitem">
             <TelegramIcon style={{ backgroundColor: "#1e1e1e" }} /><a href="https://t.me/ProjectSakura">Telegram </a>
-          </div>          
+          </div>
         </div>
       </div>
       <div className="mascot">
