@@ -1,7 +1,3 @@
-import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
-import GroupAddIcon from "@material-ui/icons/GroupAdd";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
-import BookIcon from "@material-ui/icons/Book";
 import SlideshowIcon from "@material-ui/icons/Slideshow";
 import GestureTwoToneIcon from "@material-ui/icons/GestureTwoTone";
 import TouchAppIcon from "@material-ui/icons/TouchApp";
@@ -9,7 +5,6 @@ import NavigationIcon from "@material-ui/icons/Navigation";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
-import HomeIcon from "@material-ui/icons/Home";
 import SettingEnv from "../Guides/SettingEnv/SettingEnv";
 import ReportBug from "../Guides/ReportBug/ReportBug";
 import BuildSakura from "../Guides/BuildSakura/BuildSakura";
