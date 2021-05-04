@@ -1,15 +1,12 @@
 import React from 'react';
-// import "./404page.css";
-import SettingEnv from "../Guides/SettingEnv/SettingEnv";
+import "./404page.css";
 import Image from "./404.gif";
 
 const NoMatchPage = () => {
   return (
-    <div className="Page404">
+    <div className="page404">
       <div>
-        <img className="Image404" src={Image}></img>
-        {/* <h2>404...</h2>
-        <h2>Page not found!</h2> */}
+        <img src={Image}></img>
       </div>
     </div>
   );
