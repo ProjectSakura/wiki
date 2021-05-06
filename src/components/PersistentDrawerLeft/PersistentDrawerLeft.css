@@ -35,6 +35,7 @@
 }
 .main_content_cards {
   display: grid;
+  margin-left: 20px;
   grid-template-columns: 1fr 4fr;
   gap: 20px;
 }

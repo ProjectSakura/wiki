@@ -1,11 +1,9 @@
 .footer_div{
-    /* align-items: center; */
     width: 100%;
     text-align: center;
     color: whitesmoke;
     background-color: #1e1e1e;
     cursor: default;
-    /* height: 50px; */
 }
 
 .footer_sakura{
@@ -17,5 +15,6 @@
       margin:0;
       width:100%;
       font-size: 11px;
+      text-align:center;
     }
   }

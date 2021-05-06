@@ -26,6 +26,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
 import { useParams, withRouter } from "react-router-dom";
 import Page404 from "../404page/404page";
+import Footer from "../Footer/Footer";
 
 const drawerWidth = 280;
 
@@ -61,8 +62,7 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     // overflow: "hidden",
-     backgroundColor:"#1e1e1e",
-
+    backgroundColor: "#1e1e1e",
   },
   drawerHeader: {
     display: "flex",
@@ -73,7 +73,6 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -108,7 +107,7 @@ function PersistentDrawerLeft() {
       (elem) => elem.url === "/wiki/" + window.location.href.split("/")[4]
     );
     if (dataa[0] === undefined) {
-      setmidcontent(<Page404/>);
+      setmidcontent(<Page404 />);
     } else {
       setmidcontent(dataa[0].icon);
     }
@@ -324,6 +323,7 @@ function PersistentDrawerLeft() {
             <CardTab />
             {midcontent}
           </div>
+          <Footer />
         </main>
       )}
     </div>
