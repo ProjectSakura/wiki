@@ -12,7 +12,12 @@ const BreadCrum = () => {
   return (
     <div className="breadcrum">
       <div className="breadcrum_content">
-        <HomeIcon className="breadcrum_home" /> {data[3].toUpperCase()} /{" "}
+        <HomeIcon className="breadcrum_home" />
+        {" "}
+        {data[3].toUpperCase()}
+        {" "}
+        /
+        {" "}
         {data[4] && data[4].toUpperCase()}
       </div>
     </div>

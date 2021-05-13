@@ -1,5 +1,5 @@
 import ReportProblemIcon from "@material-ui/icons/ReportProblem";
-import BuildSakuraIcon from "@material-ui/icons/Build"
+import BuildSakuraIcon from "@material-ui/icons/Build";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import GroupAddIcon from "@material-ui/icons/GroupAdd";
 import BookIcon from "@material-ui/icons/Book";
@@ -31,7 +31,7 @@ const data = [
         name: "Reporting a bug",
         icon: <ReportProblemIcon />,
         url: "/report-bug",
-      },      
+      },
     ],
   },
   {

@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true,
+        "jest": true,
+        "es6": true
     },
     "parser": "babel-eslint",
     "extends": [
@@ -36,6 +37,7 @@
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
+        "react/no-unescaped-entities": 0,
         "react/jsx-filename-extension": [
             1,
             {
@@ -45,6 +47,62 @@
                 ]
             }
         ],
-        "react/display-name": 1
+        "react/display-name": 1,
+        "space-infix-ops": [
+            "error"
+        ],
+        "max-len": "off",
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "no-async-promise-executor": [
+            "off"
+        ],
+        "no-empty-pattern": [
+            "off"
+        ],
+        "no-var": [
+            "error"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "spaced-comment": [
+            "off"
+        ],
+        "no-prototype-builtins": [
+            "off"
+        ],
+        "sort-keys": [
+            "off"
+        ],
+        "space-before-function-paren": [
+            "error"
+        ],
+        "indent": [
+            "error"
+        ],
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "react-hooks/exhaustive-deps": "warn"
     }
 }

@@ -1,17 +1,16 @@
 import React from "react";
-import PersistentDrawerLeft from "./components/PersistentDrawerLeft/PersistentDrawerLeft";
-import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PersistentDrawerLeft from "./components/PersistentDrawerLeft/PersistentDrawerLeft";
+
 function App() {
   return (
     <Router basename="/wiki">
       <div className="App">
         <PersistentDrawerLeft />
         <Switch>
-          <Route path="/wiki/:pathid"></Route>
+          <Route path="/wiki/:pathid" />
         </Switch>
       </div>
-      <Footer/>
     </Router>
 
   );
