@@ -111,7 +111,7 @@ function PersistentDrawerLeft() {
     } else {
       setmidcontent(dataa[0].icon);
     }
-    // console.log(dataa[0]);
+    // eslint-disable-next-line
   }, [pathid, window.location.href]);
 
   const [open, setOpen] = React.useState(true);

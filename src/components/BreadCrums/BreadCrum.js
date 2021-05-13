@@ -6,8 +6,9 @@ import { withRouter } from "react-router-dom";
 const BreadCrum = () => {
   const [data, setData] = useState(window.location.href.split("/"));
 
+  // eslint-disable-next-line
   useEffect(() => {
-    setData(window.location.href.split("/"));
+    setData(window.location.href.split("/")); // eslint-disable-next-line
   }, [window.location.href]);
   return (
     <div className="breadcrum">
