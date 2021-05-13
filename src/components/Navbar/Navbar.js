@@ -6,7 +6,9 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import {
+  List, ListItem, ListItemIcon, ListItemText,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +39,7 @@ export default function SimpleAccordion() {
               <ListItemIcon>
                 <NotificationsActiveIcon />
               </ListItemIcon>
-              <ListItemText primary={"Hello"} />
+              <ListItemText primary="Hello" />
             </ListItem>
           </List>
         </AccordionDetails>

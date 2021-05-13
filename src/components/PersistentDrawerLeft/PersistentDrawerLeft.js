@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
 import clsx from "clsx";
 
-import data from "../data/sidenav";
-import { Link } from "react-router-dom";
-import BreadCrum from "../BreadCrums/BreadCrum";
-import CardTab from "../CardTab/CardTab";
-import filedata from "../data/data";
-import MenuPopup from "../Navbar/MenuPopup";
-import Image from "./logo.png";
+import { Link, useParams, withRouter } from "react-router-dom";
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -24,7 +18,13 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Button } from "@material-ui/core";
-import { useParams, withRouter } from "react-router-dom";
+import Image from "./logo.png";
+import data from "../data/sidenav";
+import MenuPopup from "../Navbar/MenuPopup";
+import filedata from "../data/data";
+import CardTab from "../CardTab/CardTab";
+import BreadCrum from "../BreadCrums/BreadCrum";
+
 import Page404 from "../404page/404page";
 import Footer from "../Footer/Footer";
 
@@ -99,19 +99,19 @@ function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
 
-  const [filldata, setfilldata] = React.useState({});
+  // const [filldata, setfilldata] = React.useState({});
   const [midcontent, setmidcontent] = React.useState(null);
   useEffect(() => {
-    console.log(window.location.href.split("/"));
+    // console.log(window.location.href.split("/"));
     const dataa = filedata.filter(
-      (elem) => elem.url === "/wiki/" + window.location.href.split("/")[4]
+      (elem) => elem.url === `/wiki/${window.location.href.split("/")[4]}`,
     );
     if (dataa[0] === undefined) {
       setmidcontent(<Page404 />);
     } else {
       setmidcontent(dataa[0].icon);
     }
-    console.log(dataa[0]);
+    // console.log(dataa[0]);
   }, [pathid, window.location.href]);
 
   const [open, setOpen] = React.useState(true);
@@ -265,50 +265,48 @@ function PersistentDrawerLeft() {
             color: "whitesmoke",
           }}
         >
-          {data.map((elem1) => {
-            return (
-              <>
-                <Divider />
-                <ListItem className="drawer_elements" key={elem1.topname}>
-                  <ListItemText
-                    primary={elem1.topname}
-                    style={{
-                      color: "#00ccff",
-                    }}
-                  />
-                </ListItem>
-                <List style={{ padding: "0px" }}>
-                  {elem1.content.map((insideelem) => (
-                    <Link to={insideelem.url}>
-                      <ListItem
-                        className="drawer_elements"
-                        button
-                        key={insideelem.url}
+          {data.map((elem1) => (
+            <>
+              <Divider />
+              <ListItem className="drawer_elements" key={elem1.topname}>
+                <ListItemText
+                  primary={elem1.topname}
+                  style={{
+                    color: "#00ccff",
+                  }}
+                />
+              </ListItem>
+              <List style={{ padding: "0px" }}>
+                {elem1.content.map((insideelem) => (
+                  <Link to={insideelem.url} key={insideelem}>
+                    <ListItem
+                      className="drawer_elements"
+                      button
+                      key={insideelem.url}
+                    >
+                      <ListItemIcon
+                        style={{
+                          color: "#00ccff",
+                        }}
                       >
-                        <ListItemIcon
+                        {insideelem.icon}
+                      </ListItemIcon>
+                      <ListItemText>
+                        <div
                           style={{
-                            color: "#00ccff",
+                            textDecoration: "none",
+                            color: "whitesmoke",
                           }}
                         >
-                          {insideelem.icon}
-                        </ListItemIcon>
-                        <ListItemText>
-                          <div
-                            style={{
-                              textDecoration: "none",
-                              color: "whitesmoke",
-                            }}
-                          >
-                            {insideelem.name}
-                          </div>
-                        </ListItemText>
-                      </ListItem>
-                    </Link>
-                  ))}
-                </List>
-              </>
-            );
-          })}
+                          {insideelem.name}
+                        </div>
+                      </ListItemText>
+                    </ListItem>
+                  </Link>
+                ))}
+              </List>
+            </>
+          ))}
         </div>
       </Drawer>
       {(!open || width > 720) && (

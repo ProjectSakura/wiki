@@ -1,5 +1,5 @@
-import React from 'react';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import React from "react";
+import LinearProgress from "@material-ui/core/LinearProgress";
 import "./Loader.css";
 
 export default function LinearBuffer() {

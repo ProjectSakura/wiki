@@ -1,24 +1,24 @@
-import React, {useEffect,useState}  from "react";
+import React, { useEffect, useState } from "react";
 import Loader from "../../Loader/Loader";
 import image from "./projectSakura.png";
 import "./SettingEnv.css";
 
 const SettingEnv = () => {
   const [loading, setLoading] = useState(false);
-  useEffect(()=>{
-    setLoading(true)
+  useEffect(() => {
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
+      setLoading(false);
     }, 1500);
-  },[])
+  }, []);
   return (
     <div className="environment">
-       {loading && (
-    <Loader /> )}
-       {!loading && (
+      {loading && (
+      <Loader />)}
+      {!loading && (
       <center>
         <div className="content">
-          <img className="home_image" alt="data" src={image}></img>
+          <img className="home_image" alt="data" src={image} />
           <h1>WELCOME TO PROJECT SAKURA WIKI</h1>
           <hr />
           <h3>Some basic info about ProjectSakura!</h3>
@@ -40,12 +40,16 @@ const SettingEnv = () => {
 
           <h4>
             Designed by Cryptofox17
-            <br /> This Wiki is completely created from scratch by ArunTeltia, FireQueen-3010 and LordShenron. <br />© All Rights Reserved 2020-2021,
+            <br />
+            {" "}
+            This Wiki is completely created from scratch by ArunTeltia, FireQueen-3010 and LordShenron.
+            <br />
+            © All Rights Reserved 2020-2021,
             ProjectSakura
           </h4>
         </div>
       </center>
-       )}
+      )}
     </div>
   );
 };
