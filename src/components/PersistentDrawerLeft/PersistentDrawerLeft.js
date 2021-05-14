@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import clsx from "clsx";
 
-import { Link, useParams, withRouter } from "react-router-dom";
+import {
+  Link, withRouter, Switch, Route,
+} from "react-router-dom";
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -21,12 +23,27 @@ import { Button } from "@material-ui/core";
 import Image from "./logo.png";
 import data from "../data/sidenav";
 import MenuPopup from "../Navbar/MenuPopup";
-import filedata from "../data/data";
+// import filedata from "../data/data";
 import CardTab from "../CardTab/CardTab";
 import BreadCrum from "../BreadCrums/BreadCrum";
 
-import Page404 from "../404page/404page";
+// import Page404 from "../404page/404page";
 import Footer from "../Footer/Footer";
+
+//routes
+// import SlideshowIcon from "@material-ui/icons/Slideshow";
+// import GestureTwoToneIcon from "@material-ui/icons/GestureTwoTone";
+// import TouchAppIcon from "@material-ui/icons/TouchApp";
+// import NavigationIcon from "@material-ui/icons/Navigation";
+// import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+// import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
+//import EqualizerIcon from "@material-ui/icons/Equalizer";
+import SettingEnv from "../Guides/SettingEnv/SettingEnv";
+import ReportBug from "../Guides/ReportBug/ReportBug";
+import BuildSakura from "../Guides/BuildSakura/BuildSakura";
+import InstallSakura from "../Guides/InstallSakura/InstallSakura";
+import ApplyMaintainers from "../Guides/ApplyMaintainers/ApplyMaintainers";
+import BuildFlags from "../Guides/BuildFlags/BuildFlags";
 
 const drawerWidth = 280;
 
@@ -94,25 +111,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function PersistentDrawerLeft() {
-  const { pathid } = useParams();
+  // const { pathid } = useParams();
 
   const classes = useStyles();
   const theme = useTheme();
-
-  // const [filldata, setfilldata] = React.useState({});
-  const [midcontent, setmidcontent] = React.useState(null);
-  useEffect(() => {
-    // console.log(window.location.href.split("/"));
-    const dataa = filedata.filter(
-      (elem) => elem.url === `/wiki/${window.location.href.split("/")[4]}`,
-    );
-    if (dataa[0] === undefined) {
-      setmidcontent(<Page404 />);
-    } else {
-      setmidcontent(dataa[0].icon);
-    }
-    // eslint-disable-next-line
-  }, [pathid, window.location.href]);
 
   const [open, setOpen] = React.useState(true);
 
@@ -319,7 +321,14 @@ function PersistentDrawerLeft() {
           <BreadCrum />
           <div className="main_content_cards">
             <CardTab />
-            {midcontent}
+            <Switch>
+              <Route path="/" exact component={SettingEnv} />
+              <Route path="/build-sakura" exact component={BuildSakura} />
+              <Route path="/report-bug" exact component={ReportBug} />
+              <Route path="/install-sakura" exact component={InstallSakura} />
+              <Route path="/apply" exact component={ApplyMaintainers} />
+              <Route path="/build-flags" exact component={BuildFlags} />
+            </Switch>
           </div>
           <Footer />
         </main>

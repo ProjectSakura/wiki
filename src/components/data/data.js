@@ -16,73 +16,73 @@ const filedata = [
   {
     name: "Setting up environment",
     icon: <SettingEnv />,
-    url: "/wiki/",
+    url: "/",
   },
   {
     name: "Build Sakura",
     icon: <BuildSakura />,
-    url: "/wiki/build-sakura",
+    url: "/build-sakura",
   },
   {
     name: "Reporting a bug",
     icon: <ReportBug />,
-    url: "/wiki/report-bug",
+    url: "/report-bug",
   },
   {
     name: "Installing Sakura",
     icon: <InstallSakura />,
-    url: "/wiki/install-sakura",
+    url: "/install-sakura",
   },
 
   {
     name: "Apply for maintainership",
     icon: <ApplyMaintainers />,
-    url: "/wiki/apply",
+    url: "/apply",
   },
   {
     name: "Build Flags",
     icon: <BuildFlags />,
-    url: "/wiki/build-flags",
+    url: "/build-flags",
   },
   {
     name: "Animation",
     icon: <SlideshowIcon />,
-    url: "/wiki/animation",
+    url: "/animation",
   },
   {
     name: "Gestures",
     icon: <GestureTwoToneIcon />,
-    url: "/wiki/gestures",
+    url: "/gestures",
   },
   {
     name: "Hardware Buttons",
     icon: <TouchAppIcon />,
-    url: "/wiki/hardware-buttons",
+    url: "/hardware-buttons",
   },
   {
     name: "Miscellaneous",
     icon: <GestureTwoToneIcon />,
-    url: "/wiki/miscellaneous",
+    url: "/miscellaneous",
   },
   {
     name: "Navigation",
     icon: <NavigationIcon />,
-    url: "/wiki/navigation",
+    url: "/navigation",
   },
   {
     name: "Notification",
     icon: <NotificationsActiveIcon />,
-    url: "/wiki/notification",
+    url: "/notification",
   },
   {
     name: "Power Menu",
     icon: <PowerSettingsNewIcon />,
-    url: "/wiki/power-menu",
+    url: "/power-menu",
   },
   {
     name: "Statusbar",
     icon: <EqualizerIcon />,
-    url: "/wiki/statusbar",
+    url: "/statusbar",
   },
 ];
 export default filedata;
