@@ -23,11 +23,9 @@ import { Button } from "@material-ui/core";
 import Image from "./logo.png";
 import data from "../data/sidenav";
 import MenuPopup from "../Navbar/MenuPopup";
-// import filedata from "../data/data";
 import CardTab from "../CardTab/CardTab";
 import BreadCrum from "../BreadCrums/BreadCrum";
-
-// import Page404 from "../404page/404page";
+import Page404 from "../404page/404page";
 import Footer from "../Footer/Footer";
 
 //routes
@@ -111,8 +109,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function PersistentDrawerLeft() {
-  // const { pathid } = useParams();
-
   const classes = useStyles();
   const theme = useTheme();
 
@@ -328,6 +324,7 @@ function PersistentDrawerLeft() {
               <Route path="/install-sakura" exact component={InstallSakura} />
               <Route path="/apply" exact component={ApplyMaintainers} />
               <Route path="/build-flags" exact component={BuildFlags} />
+              <Route path="" component={Page404} />
             </Switch>
           </div>
           <Footer />
