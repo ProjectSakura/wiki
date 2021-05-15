@@ -14,9 +14,6 @@ const BreadCrum = () => {
     <div className="breadcrum">
       <div className="breadcrum_content">
         <HomeIcon className="breadcrum_home" />
-        {" "}
-        {data[3].toUpperCase()}
-        {" "}
         /
         {" "}
         {data[4] && data[4].toUpperCase()}
