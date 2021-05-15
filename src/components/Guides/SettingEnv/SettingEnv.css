@@ -6,7 +6,7 @@
   background: radial-gradient(circle farthest-side, #1e1e1e, #292929);
   width: 100%;
   justify-content: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   color: white;
   border-radius: 10px;
 }
