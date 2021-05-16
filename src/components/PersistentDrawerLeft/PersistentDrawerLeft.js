@@ -152,38 +152,43 @@ function PersistentDrawerLeft() {
             className={classes.title}
             style={{ display: "flex", alignItems: "center" }}
           >
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-            >
-              <img
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  borderRadius: "20px",
-                  paddingBottom: "2px",
-                }}
-                src={Image}
-                alt="logo"
-              />
-            </IconButton>
             {!open && (
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "2px",
+                }}
+              >
+                <img
+                  style={{
+                    width: "6vh",
+                    height: "6vh",
+                    borderRadius: "20px",
+                    marginRight: "7px",
+                  }}
+                  src={Image}
+                  alt="logo"
+                />
                 <div>
-                  <h2 className="Main-logo">
-                    <span>Project</span>
-                    <span className="Sakura"> Sakura</span>
-                  </h2>
+                  <h1 className="drawer_logoname">
+                    <span className="drawer_oroject">Project</span>
+                    <span className="drawer_sakura"> Sakura</span>
+                    <div className="spring"><em>Feels like spring</em></div>
+                  </h1>
+
                 </div>
-                <div className="spring">
-                  <h6>
-                    <i>feels like spring</i>
-                  </h6>
+                <div
+                  style={{
+                    color: "whitesmoke",
+                    marginLeft: "2vh",
+                  }}
+                >
+                  <ChevronRightIcon onClick={handleDrawerOpen} />
                 </div>
+
               </div>
+
             )}
           </div>
           {width > 720 && (
