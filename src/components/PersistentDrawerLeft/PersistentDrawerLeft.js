@@ -80,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#1e1e1e",
   },
   drawerHeader: {
+
     display: "flex",
     alignItems: "center",
     padding: theme.spacing(0, 1),
@@ -120,11 +121,6 @@ function PersistentDrawerLeft() {
     setWidth(window.innerWidth);
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", updateWidthAndHeight);
-    return () => window.removeEventListener("resize", updateWidthAndHeight);
-  });
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -132,6 +128,15 @@ function PersistentDrawerLeft() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWidthAndHeight);
+    return () => window.removeEventListener("resize", updateWidthAndHeight);
+  });
+
+  useEffect(() => {
+    if (width < 468) handleDrawerClose();
+  }, [width]);
 
   return (
     <div className={classes.root}>
@@ -281,6 +286,7 @@ function PersistentDrawerLeft() {
                       className="drawer_elements"
                       button
                       key={insideelem.url}
+                      onClick={handleDrawerClose}
                     >
                       <ListItemIcon
                         style={{
@@ -307,7 +313,7 @@ function PersistentDrawerLeft() {
           ))}
         </div>
       </Drawer>
-      {(!open || width > 720) && (
+      {(!open || width > 720 || width < 468) && (
         <main
           className={clsx(classes.content, {
             [classes.contentShift]: open,
