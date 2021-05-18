@@ -36,12 +36,15 @@ const CardTab = () => (
     </div>
     <div className="mascot">
       <center>
-        <h4>Our Mascot</h4>
-        <img
-          src={Mascot}
-          style={{ width: "100%" }}
-          alt="project sakura mascot"
-        />
+        <h4>Proud Sponsor</h4>
+        <br />
+        <a href="https://www.xsl.tel/" target="_blank" rel="noreferrer">
+          <img
+            src={Mascot}
+            style={{ width: "100%" }}
+            alt="project sakura mascot"
+          />
+        </a>
       </center>
     </div>
   </div>
