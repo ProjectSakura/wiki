@@ -28,6 +28,8 @@ const ApplyMaintainers = () => {
               <br />
               <br />
               1. You must own the device.
+              You can maintain the device that have minimal hardware difference and use common trees with your device.
+              BLIND building is absolutely NOT allowed.
               <br />
               <br />
               2. You must know Basic git ( creating pull requests, properly writing commits, cherry-picking and other basic stuff).
@@ -39,10 +41,14 @@ const ApplyMaintainers = () => {
               4. You must know how to read basic logcats.
               <br />
               <br />
-              5. You must have to compile Unofficial builds before you apply for Official.
+              5. You must have to compile Unofficial builds before you apply for Official. Do NOT apply as soon as you built an unofficial build and instead maintain it for a period of 2 months.
+              Applying before you have even built will lead to instant rejection and we will blacklist you in our database.
               <br />
               <br />
               6. Co-Maintaining is allowed but you cannot be a shadow maintainer for some other guy.
+              <br />
+              <br />
+              <b>You will recieve an email or Telegram message if we acknowledge your application. In some cases we may talk to you for some period of time to decide if we should accept or reject your application.</b>
             </p>
             <hr />
             <h2>APPLICATION FORM </h2>
