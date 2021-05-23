@@ -42,6 +42,9 @@ import BuildSakura from "../Guides/BuildSakura/BuildSakura";
 import InstallSakura from "../Guides/InstallSakura/InstallSakura";
 import ApplyMaintainers from "../Guides/ApplyMaintainers/ApplyMaintainers";
 import BuildFlags from "../Guides/BuildFlags/BuildFlags";
+import Interface from "../Guides/Interface/Interface";
+import QuickSetting from "../Guides/QuickSetting/QuickSetting";
+import LockScreen from "../Guides/LockScreen/LockScreen";
 
 const drawerWidth = 280;
 
@@ -335,6 +338,9 @@ function PersistentDrawerLeft() {
               <Route path="/install-sakura" exact component={InstallSakura} />
               <Route path="/apply" exact component={ApplyMaintainers} />
               <Route path="/build-flags" exact component={BuildFlags} />
+              <Route path="/interface" exact component={Interface} />
+              <Route path="/quicksetting" exact component={QuickSetting} />
+              <Route path="/lockscreen" exact component={LockScreen} />
               <Route path="" component={Page404} />
             </Switch>
           </div>

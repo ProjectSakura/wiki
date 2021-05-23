@@ -5,11 +5,10 @@ import GroupAddIcon from "@material-ui/icons/GroupAdd";
 import BookIcon from "@material-ui/icons/Book";
 import SlideshowIcon from "@material-ui/icons/Slideshow";
 import GestureTwoToneIcon from "@material-ui/icons/GestureTwoTone";
-import TouchAppIcon from "@material-ui/icons/TouchApp";
+import SettingsIcon from "@material-ui/icons/Settings";
 import NavigationIcon from "@material-ui/icons/Navigation";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
-import EqualizerIcon from "@material-ui/icons/Equalizer";
+import LockIcon from "@material-ui/icons/Lock";
 import HomeIcon from "@material-ui/icons/Home";
 
 const data = [
@@ -56,19 +55,24 @@ const data = [
     topicon: <HomeIcon />,
     content: [
       {
-        name: "Animation",
+        name: "Interface",
         icon: <SlideshowIcon />,
-        url: "/animation",
+        url: "/interface",
+      },
+      {
+        name: "Quick Settings",
+        icon: <SettingsIcon />,
+        url: "/quicksetting",
+      },
+      {
+        name: "Lock Screen",
+        icon: <LockIcon />,
+        url: "/lockscreen",
       },
       {
         name: "Gestures",
         icon: <GestureTwoToneIcon />,
         url: "/gestures",
-      },
-      {
-        name: "Hardware Buttons",
-        icon: <TouchAppIcon />,
-        url: "/hardware-buttons",
       },
       {
         name: "Miscellaneous",
@@ -84,16 +88,6 @@ const data = [
         name: "Notification",
         icon: <NotificationsActiveIcon />,
         url: "/notification",
-      },
-      {
-        name: "Power Menu",
-        icon: <PowerSettingsNewIcon />,
-        url: "/power-menu",
-      },
-      {
-        name: "Statusbar",
-        icon: <EqualizerIcon />,
-        url: "/statusbar",
       },
     ],
   },
