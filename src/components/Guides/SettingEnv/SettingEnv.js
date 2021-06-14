@@ -42,13 +42,8 @@ const SettingEnv = () => {
           <hr />
 
           <h4>
-            Designed by Cryptofox17
-            <br />
-            {" "}
-            This Wiki is completely created from scratch by ArunTeltia, FireQueen-3010 and LordShenron.
-            <br />
-            © All Rights Reserved 2020-2021,
-            ProjectSakura
+            © All Rights Reserved 2020-2021
+            Project Sakura
           </h4>
         </div>
       </center>

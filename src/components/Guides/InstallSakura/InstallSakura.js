@@ -33,7 +33,7 @@ const InstallSakura = () => {
             <h2>DOWNLOAD PROJECT SAKURA</h2>
             <p>
               To flash ProjectSakura you will need to get the flashable ROM zip for your device. We have a download center where you can get builds for every device that we support, Go to
-              <a href="https://ProjectSakura.xyz/download" target="_blank" rel="noreferrer">ProjectSakura | Downloads</a>
+              <a href="https://ProjectSakura.xyz/download" target="_blank" rel="noreferrer"> ProjectSakura | Downloads</a>
               <br />
               <br />
               If you cannot find the build for your device on our download center then it probably is unsupported  by us.

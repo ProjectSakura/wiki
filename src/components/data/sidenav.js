@@ -17,11 +17,6 @@ const data = [
     topicon: <HomeIcon />,
     content: [
       {
-        name: "Building Sakura",
-        icon: <BuildSakuraIcon />,
-        url: "/build-sakura",
-      },
-      {
         name: "Installing Sakura",
         icon: <CloudDownloadIcon />,
         url: "/install-sakura",
@@ -39,14 +34,19 @@ const data = [
 
     content: [
       {
-        name: "Apply for maintainership",
-        icon: <GroupAddIcon />,
-        url: "/apply",
+        name: "Building Sakura",
+        icon: <BuildSakuraIcon />,
+        url: "/build-sakura",
       },
       {
         name: "Build Flags",
         icon: <BookIcon />,
         url: "/build-flags",
+      },
+      {
+        name: "Apply for maintainership",
+        icon: <GroupAddIcon />,
+        url: "/apply",
       },
     ],
   },

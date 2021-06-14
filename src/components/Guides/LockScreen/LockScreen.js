@@ -1,4 +1,7 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
+import SyntaxHighLighter from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Loader from "../../Loader/Loader";
 import "./LockScreen.css";
 
@@ -24,28 +27,43 @@ const LockScreen = () => {
             <ol>
               <li>
                 <b>Lockscreen charging information:</b>
+                <br />
                 {" "}
+                <SyntaxHighLighter language="bash" style={dracula}>
                 show basic information on lock screen while charging.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Background blur:</b>
+                <br />
                 {" "}
+                <SyntaxHighLighter language="bash" style={dracula}>
                 Blur the lock screen background if QS blur is enabled.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Weather:</b>
+                <br />
                 {" "}
+                <SyntaxHighLighter language="bash" style={dracula}>
                 Show weather on lockscreen or at a glance using OmniJaws weather controller.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Screen Off Animations:</b>
+                <br />
                 {" "}
+                <SyntaxHighLighter language="bash" style={dracula}>
                 use a custom animation for locking screen.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Secure Lockscreen:</b>
+                <br />
                 {" "}
-                Block powermenu on lockscreen or require authentication to perform reboot or power off functions from lockscreen.
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Block powermenu on lockscreen or require authentication to perform power actions.
+                </SyntaxHighLighter>
               </li>
             </ol>
           </div>

@@ -37,7 +37,7 @@ const BuildFlags = () => {
               <br />
               <br />
               <SyntaxHighLighter language="bash" style={dracula}>
-                SAKURA_OPLAUNCHER := true //For building ProjectSakura with default OnePlus Launcher.
+                SAKURA_LAWNCHAIR := true //For building ProjectSakura with default Lawnchair Launcher.
               </SyntaxHighLighter>
               <br />
               <br />

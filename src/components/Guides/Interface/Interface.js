@@ -1,4 +1,7 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
+import SyntaxHighLighter from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Loader from "../../Loader/Loader";
 import "./Interface.css";
 
@@ -24,51 +27,80 @@ const Interface = () => {
             <ol>
               <li>
                 <b>Roaming Indicator</b>
-                : Display a roaming indicator when in roaming mode.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Display a roaming indicator when in roaming mode.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>LTE to 4G icon</b>
-                : Display a 4G icon instead of old LTE icon.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>                
+                Display a 4G icon instead of old LTE icon.
+                </SyntaxHighLighter>                
               </li>
               <li>
                 <b>Old Style Signal icons</b>
-                : Merge signal and signal type icons (LTE, 4G, Roaming), this saves some space on the status bar.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Merge signal and signal type icons (LTE, 4G, Roaming).
+                </SyntaxHighLighter>              
               </li>
               <li>
                 <b>Data Disabled indicators</b>
-                : Display a small cross icon on network icons, indicating that mobile data is turned off.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Display a small cross icon on network icons, indicating that mobile data is turned off.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Bluetooth Battery status</b>
-                : Display the battery level of the connected bluetooth devices.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Display the battery level of the connected bluetooth devices.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Traffic Indicators</b>
-                : Show network traffic status in status bar or QS header.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Show network traffic status in status bar or QS header.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Charging Animation</b>
-                : Display an animation when the device gets plugged in.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Display an animation when the device gets plugged in.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>OneUI styled actionbar</b>
-                : Display a large spacer above settings like in OneUI for easier one hand control.
-              </li>
-              <li>
-                <b>Sakura Themes</b>
-                : A set of themes like ChocoX, Transparent Mizu Theme, Pitch black, Google Grey and many more.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Display a large spacer above settings like in OneUI for easier one hand control.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Settings Dashboard icon</b>
-                : Tweak dashboard icons in Settings app.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Tweak dashboard icons in Settings app.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>Battery Bar</b>
-                : Show a battery bar above status bar indicating charging and battery levels.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Show a battery bar above status bar indicating charging and battery levels.
+                </SyntaxHighLighter>
               </li>
               <li>
                 <b>G-visual Mod</b>
-                : Tweak status bar height and corner radius of the UI while using default icon shapes.
+                <br />
+                <SyntaxHighLighter language="bash" style={dracula}>
+                Tweak status bar height and corner radius of the UI while using default icon shapes.
+                </SyntaxHighLighter>
               </li>
             </ol>
           </div>

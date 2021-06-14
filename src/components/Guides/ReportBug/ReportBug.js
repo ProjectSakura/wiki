@@ -23,7 +23,7 @@ const ReportBug = () => {
             <h2>WHERE SHOULD I REPORT BUGS</h2>
             <p>
               You can report Bugs that are related to our Source on our
-              <a href="https://github.com/ProjectSakura/Bug_Tracker" target="_blank" rel="noreferrer">Bug Reports Repo.</a>
+              <a href="https://github.com/ProjectSakura/Bug_Tracker" target="_blank" rel="noreferrer"> Bug Reports Repo.</a>
               <br />
               If you are facing a bug related to a specific device then you can report about it to the device maintainer in our Telegram Chat or the device specific support Group.
             </p>
