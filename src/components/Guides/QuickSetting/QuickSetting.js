@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -29,29 +28,29 @@ const QuickSetting = () => {
               <li>
                 <b>QS tint:</b>
                 <br />
-				<SyntaxHighLighter language="bash" style={dracula}>
-                Tint the QS tiles with accent color.
+                <SyntaxHighLighter language="bash" style={dracula}>
+                  Tint the QS tiles with accent color.
                 </SyntaxHighLighter>
               </li>
               <li>
                 <b>Tile Title controller:</b>
                 <br />
                 <SyntaxHighLighter language="bash" style={dracula}>
-                Display or hide the tile titles in QS.
+                  Display or hide the tile titles in QS.
                 </SyntaxHighLighter>
               </li>
               <li>
                 <b>Vibration controller:</b>
                 <br />
                 <SyntaxHighLighter language="bash" style={dracula}>
-                Give haptic feedback while clicking on QS icons.
+                  Give haptic feedback while clicking on QS icons.
                 </SyntaxHighLighter>
               </li>
               <li>
                 <b>Data usage in QS header:</b>
                 <br />
                 <SyntaxHighLighter language="bash" style={dracula}>
-                Display current data usage from Wifi or Mobile internet.
+                  Display current data usage from Wifi or Mobile internet.
                 </SyntaxHighLighter>
               </li>
               <li><b>QS rows and column controller</b></li>
