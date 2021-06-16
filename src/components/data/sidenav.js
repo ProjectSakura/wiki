@@ -6,8 +6,8 @@ import BookIcon from "@material-ui/icons/Book";
 import SlideshowIcon from "@material-ui/icons/Slideshow";
 import GestureTwoToneIcon from "@material-ui/icons/GestureTwoTone";
 import SettingsIcon from "@material-ui/icons/Settings";
-import NavigationIcon from "@material-ui/icons/Navigation";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+import ArtTrackIcon from "@material-ui/icons/ArtTrack";
 import LockIcon from "@material-ui/icons/Lock";
 import HomeIcon from "@material-ui/icons/Home";
 
@@ -70,19 +70,14 @@ const data = [
         url: "/lockscreen",
       },
       {
-        name: "Gestures",
+        name: "Gesture",
         icon: <GestureTwoToneIcon />,
-        url: "/gestures",
+        url: "/gesture",
       },
       {
         name: "Miscellaneous",
-        icon: <GestureTwoToneIcon />,
+        icon: <ArtTrackIcon />,
         url: "/miscellaneous",
-      },
-      {
-        name: "Navigation",
-        icon: <NavigationIcon />,
-        url: "/navigation",
       },
       {
         name: "Notification",
