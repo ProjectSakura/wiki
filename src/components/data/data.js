@@ -1,7 +1,6 @@
 import SlideshowIcon from "@material-ui/icons/Slideshow";
 import GestureTwoToneIcon from "@material-ui/icons/GestureTwoTone";
 import TouchAppIcon from "@material-ui/icons/TouchApp";
-import NavigationIcon from "@material-ui/icons/Navigation";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
@@ -63,11 +62,6 @@ const filedata = [
     name: "Miscellaneous",
     icon: <GestureTwoToneIcon />,
     url: "/miscellaneous",
-  },
-  {
-    name: "Navigation",
-    icon: <NavigationIcon />,
-    url: "/navigation",
   },
   {
     name: "Notification",

@@ -45,6 +45,9 @@ import BuildFlags from "../Guides/BuildFlags/BuildFlags";
 import Interface from "../Guides/Interface/Interface";
 import QuickSetting from "../Guides/QuickSetting/QuickSetting";
 import LockScreen from "../Guides/LockScreen/LockScreen";
+import Gesture from "../Guides/Gesture/Gesture";
+import Notification from "../Guides/Notification/Notification";
+import Miscellaneous from "../Guides/Miscellaneous/Miscellaneous";
 
 const drawerWidth = 280;
 
@@ -341,6 +344,9 @@ function PersistentDrawerLeft() {
               <Route path="/interface" exact component={Interface} />
               <Route path="/quicksetting" exact component={QuickSetting} />
               <Route path="/lockscreen" exact component={LockScreen} />
+              <Route path="/gesture" exact component={Gesture} />
+              <Route path="/notification" exact component={Notification} />
+              <Route path="/miscellaneous" exact component={Miscellaneous} />
               <Route path="" component={Page404} />
             </Switch>
           </div>

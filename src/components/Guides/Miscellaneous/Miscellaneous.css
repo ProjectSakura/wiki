@@ -1,0 +1,37 @@
+.environment {
+    display: flex;
+    background: radial-gradient(circle farthest-side, #1e1e1e, #292929);
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
+}
+.content {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+center{
+    width: 100%;
+}
+.content h2{
+    margin-left: 2vh;
+    border-bottom: 2px solid #00CCFF;
+    text-transform: uppercase;
+}
+.loader {
+    margin: auto;
+}
+ol{
+    margin-left: 5vh;
+    font-size: 1.2em;
+    width: 100%;
+}
+li{
+    margin-bottom: 2vh;
+}
