@@ -17,6 +17,9 @@
   margin-top: 2%;
   margin-right: 5%;
 }
+.loader {
+    margin: auto;
+}
 .form{
   background-color: #FFFFFF;
   width: 100%;

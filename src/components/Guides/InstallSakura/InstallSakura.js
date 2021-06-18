@@ -13,9 +13,9 @@ const InstallSakura = () => {
   return (
     <div className="environment">
       {loading && (
-      <div className="loader">
-        <Loader />
-      </div>
+        <div className="loader">
+          <Loader />
+        </div>
       )}
       {!loading && (
         <center>

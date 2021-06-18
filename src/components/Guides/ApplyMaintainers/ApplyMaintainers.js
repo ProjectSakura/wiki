@@ -13,7 +13,10 @@ const ApplyMaintainers = () => {
   return (
     <div className="environment">
       {loading && (
-        <Loader />)}
+        <div className="loader">
+          <Loader />
+        </div>
+      )}
       {!loading && (
         <center>
           <div className="content">

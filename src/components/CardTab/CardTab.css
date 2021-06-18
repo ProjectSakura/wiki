@@ -1,68 +1,80 @@
-.cardtab{
-  margin:3.5vh 1vh;
+.cardtab {
+    margin: 3.5vh 1vh;
 }
+
 .card_table_of_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1e1e1e;
-  width: 100%;
-  border-radius: 4px;
-  padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    width: 100%;
+    border-radius: 4px;
+    padding-bottom: 10px;
 }
+
 .card_list {
-  width: 100%;
+    width: 100%;
 }
+
 .card_heading {
-  padding: 10px 0px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: #1e1e1e;
+    padding: 10px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1e1e1e;
 }
+
 .card_heading1 {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  color: white;
-  background-color: #1e1e1e;
-  justify-content: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    background-color: #1e1e1e;
+    justify-content: center;
 }
+
 .card_listitem {
-  padding: 10px 10px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 10px;
-  background-position: center;
-  transition: background 0.8s;
-  color: white;
-  background-color: #1e1e1e;
+    padding: 10px 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    background-position: center;
+    transition: background 0.8s;
+    color: white;
+    background-color: #1e1e1e;
 }
 
 .card_listitem:hover {
-  background: #1e1e1e radial-gradient(circle, transparent 1%, #111111 1%)
-    center/15000%;
+    background: #1e1e1e radial-gradient(circle, transparent 1%, #111111 1%) center/15000%;
 }
+
 .card_listitem:active {
-  background-size: 100%;
-  transition: background 0s;
+    background-size: 100%;
+    transition: background 0s;
 }
+
 a {
-  text-decoration: none;
-  color: #b3d4fc;
-  background-color: #1e1e1e;
+    text-decoration: none;
+    color: #b3d4fc;
+    background-color: #1e1e1e;
 }
+
 .mascot {
-  width: 100%;
-  font-size: 20px;
-  color: white;
-  margin-top: 30px;
+    max-width: 100%;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
 }
-@media (max-width: 567px) {
-  .card_table_of_content {
+
+.sponsor {
     width: 100%;
-  }
+}
+
+@media (max-width: 567px) {
+    .card_table_of_content {
+        width: 100%;
+    }
 }
