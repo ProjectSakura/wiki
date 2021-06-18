@@ -1,21 +1,23 @@
 .environment {
-  display: flex;
-  background: radial-gradient(circle farthest-side, #1e1e1e, #292929);
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 30px;
-  color: white;
-  border-radius: 10px;
+    display: flex;
+    background: radial-gradient(circle farthest-side, #1e1e1e, #292929);
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
 }
+
 .content {
-  display: flex;
-  text-align: justify;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 20px;
-  margin-top: 2%;
-  margin-right: 5%;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 2%;
+    margin-right: 40%;
 }
-.loader{
-  margin: auto;
+
+.loader {
+    margin: auto;
 }

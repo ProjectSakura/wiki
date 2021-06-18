@@ -20,7 +20,7 @@ center{
     width: 100%;
 }
 .content h2{
-    margin-left: 2vh;
+    margin-left: 0vh;
     border-bottom: 2px solid #00CCFF;
     text-transform: uppercase;
 }

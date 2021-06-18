@@ -41,7 +41,7 @@ const CardTab = () => (
         <a href="https://www.xsl.tel/" target="_blank" rel="noreferrer">
           <img
             src={Mascot}
-            style={{ width: "100%" }}
+            className="sponsor"
             alt="project sakura mascot"
           />
         </a>
