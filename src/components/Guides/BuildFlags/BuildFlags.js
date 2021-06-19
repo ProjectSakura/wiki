@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -29,27 +30,27 @@ const BuildFlags = () => {
               List of all flags with their functionality.
             </h2>
             <p>
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 SAKURA_BUILD_TYPE := gapps //For building ProjectSakura with Builtin GAPPS.
               </SyntaxHighLighter>
               <br />
               <br />
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 SAKURA_BUILD_TYPE := microg //For building ProjectSakura with Builtin MICROG.
               </SyntaxHighLighter>
               <br />
               <br />
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 SAKURA_LAWNCHAIR := true //For building ProjectSakura with default Lawnchair Launcher.
               </SyntaxHighLighter>
               <br />
               <br />
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 TARGET_USES_BLUR := true //For building ProjectSakura with option to toggle Notification shade Blur.
               </SyntaxHighLighter>
               <br />
               <br />
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 {
                   "EXTRA_FOD_ANIMATIONS := true //For building ProjectSakura with FODAnimations resources. "
                 }

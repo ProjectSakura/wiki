@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -15,9 +16,9 @@ const LockScreen = () => {
   return (
     <div className="environment">
       {loading && (
-      <div className="loader">
-        <Loader />
-      </div>
+        <div className="loader">
+          <Loader />
+        </div>
       )}
       {!loading && (
         <center>
@@ -28,7 +29,7 @@ const LockScreen = () => {
                 <b>Lockscreen charging information:</b>
                 <br />
                 {" "}
-                <SyntaxHighLighter language="bash" style={dracula}>
+                <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                   show basic information on lock screen while charging.
                 </SyntaxHighLighter>
               </li>
@@ -36,7 +37,7 @@ const LockScreen = () => {
                 <b>Background blur:</b>
                 <br />
                 {" "}
-                <SyntaxHighLighter language="bash" style={dracula}>
+                <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                   Blur the lock screen background if QS blur is enabled.
                 </SyntaxHighLighter>
               </li>
@@ -44,7 +45,7 @@ const LockScreen = () => {
                 <b>Weather:</b>
                 <br />
                 {" "}
-                <SyntaxHighLighter language="bash" style={dracula}>
+                <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                   Show weather on lockscreen or at a glance using OmniJaws weather controller.
                 </SyntaxHighLighter>
               </li>
@@ -52,7 +53,7 @@ const LockScreen = () => {
                 <b>Screen Off Animations:</b>
                 <br />
                 {" "}
-                <SyntaxHighLighter language="bash" style={dracula}>
+                <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                   use a custom animation for locking screen.
                 </SyntaxHighLighter>
               </li>
@@ -60,7 +61,7 @@ const LockScreen = () => {
                 <b>Secure Lockscreen:</b>
                 <br />
                 {" "}
-                <SyntaxHighLighter language="bash" style={dracula}>
+                <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                   Block powermenu on lockscreen or require authentication to perform power actions.
                 </SyntaxHighLighter>
               </li>

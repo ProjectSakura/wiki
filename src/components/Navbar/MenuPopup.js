@@ -18,10 +18,10 @@ const MenuPopupState = () => {
       <MenuIcon {...bindTrigger(popupState)} />
       <Menu className="menu_popup" {...bindMenu(popupState)}>
         <CloseIcon className="menu_close" onClick={popupState.close} />
-        <span className="menu_span"><MenuItem className="menu_items" href="#">Home</MenuItem></span>
-        <span className="menu_span"><MenuItem className="menu_items" href="#">Downloads</MenuItem></span>
-        <span className="menu_span"><MenuItem className="menu_items" href="#">Stats</MenuItem></span>
-        <span className="menu_span"><MenuItem className="menu_items" href="#">Blog</MenuItem></span>
+        <span className="menu_span"><MenuItem className="menu_items" href="https://projectsakura.xyz/">Home</MenuItem></span>
+        <span className="menu_span"><MenuItem className="menu_items" href="https://projectsakura.xyz/blog">Blog</MenuItem></span>
+        <span className="menu_span"><MenuItem className="menu_items" href="https://projectsakura.xyz/stats.html">Stats</MenuItem></span>
+        <span className="menu_span"><MenuItem className="menu_items" href="https://projectsakura.xyz/download">Download</MenuItem></span>
       </Menu>
     </div>
   );

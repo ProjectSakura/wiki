@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import SyntaxHighLighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -41,7 +42,7 @@ const BuildSakura = () => {
               <br />
             </p>
             <div className="wrapper">
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 git clone https://github.com/akhilnarang/scripts; cd scripts; sudo bash setup/android_build_env.sh
               </SyntaxHighLighter>
             </div>
@@ -53,7 +54,7 @@ const BuildSakura = () => {
               <br />
             </p>
             <div className="wrapper">
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 sudo apt-get install openjdk-8-jdk && sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib maven tmux screen w3m ncftp
               </SyntaxHighLighter>
             </div>
@@ -71,7 +72,7 @@ const BuildSakura = () => {
               <br />
             </p>
             <div className="wrapper">
-              <SyntaxHighLighter language="bash" style={dracula}>
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
                 repo init --depth=1 -u git://github.com/ProjectSakura/android.git -b 11 && repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j `nproc`
               </SyntaxHighLighter>
             </div>
@@ -84,7 +85,7 @@ const BuildSakura = () => {
               <br />
               <br />
             </p>
-            <SyntaxHighLighter language="bash" style={dracula}>
+            <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
               . build/envsetup.sh && lunch lineage_devicecodename-userdebug && mka bacon -jx
             </SyntaxHighLighter>
           </div>
