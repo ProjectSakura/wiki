@@ -20,8 +20,7 @@
   }
 
   .menu_span{
-    display: flex;
-    justify-content: center;
+
   }
   
   .menu_items:active{
@@ -38,4 +37,6 @@
    outline: none;
    border: none;
   }
-  
+  .navlink{
+    margin:auto;
+  }
