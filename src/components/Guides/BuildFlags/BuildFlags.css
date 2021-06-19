@@ -20,3 +20,12 @@
 .loader {
     margin: auto;
 }
+@media screen and (max-width: 770px) {
+    li {
+        margin-left: 0vh;
+        font-size: 0.8em;
+    }
+    .syntax {
+        margin-left: 0vh !important;
+    }
+}

@@ -200,16 +200,16 @@ function PersistentDrawerLeft() {
           {width > 720 && (
             <div>
               <Button color="inherit">
-                <b>Home</b>
+                <a href="https://projectsakura.xyz/" target="blank"><b>Home</b></a>
               </Button>
               <Button color="inherit">
-                <b>Download</b>
+                <a href="https://projectsakura.xyz/download" target="blank"><b>Download</b></a>
               </Button>
               <Button color="inherit">
-                <b>Stats</b>
+                <a href="https://projectsakura.xyz/stats.html" target="blank"><b>Stats</b></a>
               </Button>
               <Button color="inherit">
-                <b>Blog</b>
+                <a href="https://projectsakura.xyz/blog" target="blank"><b>Blog</b></a>
               </Button>
             </div>
           )}
