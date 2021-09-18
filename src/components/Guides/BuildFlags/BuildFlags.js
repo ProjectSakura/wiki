@@ -31,7 +31,12 @@ const BuildFlags = () => {
             </h2>
             <p>
               <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
-                SAKURA_BUILD_TYPE := gapps //For building ProjectSakura with Builtin GAPPS.
+                SAKURA_BUILD_TYPE=coregapps //For building ProjectSakura with Builtin Core GAPPS
+              </SyntaxHighLighter>
+              <br />
+              <br />
+              <SyntaxHighLighter className="syntax" language="bash" wrapLongLines={true} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }} style={dracula}>
+               SAKURA_BUILD_TYPE=basicgapps //For building ProjectSakura with Builtin Basic GAPPS
               </SyntaxHighLighter>
               <br />
               <br />
